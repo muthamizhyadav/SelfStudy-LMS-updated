@@ -17,7 +17,7 @@ import { CommonModule } from '@angular/common';
 })
 export class CourseHomeComponent {
 
-  showPopup = false;
+  showPopup = true;
 
   handleConfirm() {
     console.log('Confirmed!');
