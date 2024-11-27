@@ -1,0 +1,27 @@
+.title-cards{
+    p{
+        font-size: 15px;
+    }
+}
+.table-auto{
+    margin-bottom:  40px ;
+    td{
+        border: 0.5px solid rgba(0, 0, 0, 0.321);
+        padding: 10px;
+       
+        font-size: 14px;
+        
+    }
+}
+.curve{
+    border: 0.5px solid rgba(128, 128, 128, 0.726);
+    border-radius:0 25px  25px 0;
+    border-left: none;
+    padding-left: 15px;
+}
+.cl{
+    width: 120px;
+    p{
+        font-size: 12px
+    };
+}

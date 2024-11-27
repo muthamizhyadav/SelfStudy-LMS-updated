@@ -1,0 +1,130 @@
+<app-header></app-header>
+<div class="px-[10px]">
+  <div class="flex w-full mt-[120px]  gap-[15px]">
+    <div class="min-w-[240px]">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="min-w-[calc(100% - 280px)] w-full">
+      <!-- cards-container  upper section-->
+      <section
+        class="h-[140px]  xl:flex-row  gap-[10px] flex items-center justify-evenly w-full"
+      >
+        <!-- user profile card -->
+        <app-user-details class="h-full w-[50%]"></app-user-details>
+        <!-- <div class="w-[600px] 2xl:flex-1 h-full bg-white flex rounded-md">
+          <div
+            class="w-[145px] flex flex-col items-center justify-center gap-[10px]"
+          >
+            <img src="profile.svg" alt="" />
+            <span class="bg-[var(--db)] text-white px-[5px] rounded-md">
+              <p>ID No:1456</p></span
+            >
+          </div>
+          <div
+            class="w-[calc(100%-80px)] flex flex-col items-start justify-center gap-[10px]"
+          >
+            <h2 class="text-[22px] font-semibold text-[var(--gr)]">
+              Good Morning <span class="text-[var(--db)]">Alex Roy</span>
+            </h2>
+            <p class="text-black font-[500]">
+              HND Leading to BSc (Hons) Business with International Business
+              Management - LJM
+            </p>
+          </div>
+        </div> -->
+        <!-- calender card -->
+        <app-event-calendar class="w-[25%] h-full"></app-event-calendar>
+        <!-- <div
+          class="w-[300px] px-[10px] h-full rounded-md justify-between bg-white flex flex-col"
+        >
+          <div>
+            <h2 class="font-semibold text-black text-[20px]">
+              June <span class="font-thin">2024</span>
+            </h2>
+          </div>
+          <div class="flex gap-[10px]">
+            <div class="img-back">
+              <p class="text-[#82D0FC]">25</p>
+            </div>
+            <div>
+              <p class="text-[13px]">International Business | Webinar</p>
+              <span class="block h-[2px] w-full bg-[var(--lgr)]"></span>
+              <p class="text-[13px]">9:00 AM</p>
+            </div>
+          </div>
+          <div class="flex mb-[10px] justify-between">
+            <div class="flex items-center">
+              <span
+                class="inline-block text-[14px] h-[15px] w-[15px] bg-[#82D0FC]"
+              ></span>
+              <p class="text-[13px] ml-[5px] font-[500]">Events</p>
+            </div>
+            <p class="text-[13px] font-[500] underline">Full Calender</p>
+          </div>
+        </div> -->
+        <!-- course card -->
+         <!-- new -->
+         <app-course-progress class="w-[25%] h-full" ></app-course-progress>
+        <!-- <div
+          class="w-[300px] px-[10px] h-full rounded-md justify-between bg-[var(--dgr)] flex flex-col crs-card"
+        >
+          <div>
+            <h2 class="font-semibold text-white text-[20px]">
+              Course
+              <span style="font-size: 20px" class="font-thin">progress</span>
+            </h2>
+          </div>
+          <div class="flex items-center gap-[4px]">
+            <span class="block h-[15px] w-[4px] bg-[var(--or)]"></span>
+            <p class="text-white text-[13px]">
+              No Courses Yet
+            </p>
+          </div>
+          <div class="flex h-[60px] justify-between items-center">
+            <div class="flex opacity-0 flex-col justify-evenly h-full">
+              <p><span class="font-semibold">20%</span> Complete</p>
+              <div
+                class="w-full bg-gray-200 rounded-full h-[5px] "
+              >
+                <div
+                  class="bg-red-600 h-[5px] rounded-full dark:bg-red-500"
+                  style="width: 45%"
+                ></div>
+              </div>
+              <p class="font-light opacity-0">
+                Days Remaining :<span class="font-semibold">15</span>
+              </p>
+            </div>
+            <span class="block opacity-0 h-[calc(100%-10px)] w-[1px] bg-[var(--lgr)]">
+            </span>
+            <div class="relative h-full">
+              <p class="opacity-0">Next step :<span class="font-semibold">MCQ</span></p>
+              <div class="og-2">
+                <p>Explore Courses</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         -->
+
+  
+      </section>
+      <!-- course box lower section -->
+      <section
+        class="h-[540px] mt-[15px] xl:flex-row gap-[10px] justify-evenly flex items-center w-full"
+      >
+        <!-- banner card -->
+         <div class=" flex items-center"><app-upcoming-events></app-upcoming-events></div>
+         
+       
+        <!-- ongoing course -->
+        <app-academic-journey class="w-[35%]"></app-academic-journey>
+       
+        <!-- add course -->
+        <app-upcoming-milestone class="w-[50%]"></app-upcoming-milestone>
+        
+      </section>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

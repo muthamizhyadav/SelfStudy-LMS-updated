@@ -1,0 +1,45 @@
+.crs-card{
+    p{
+        color: white;
+        font-size: 12.5px;
+    }
+    span{
+        color: white;
+        font-size: 12.5px;
+    }
+    .og-box{
+        border: 2px solid var(--or);
+        border-right: none;
+       position: absolute;
+        width: 105px;
+        bottom: 10px;
+        padding-left: 5px;
+        border-radius: 10px 0 0px 10px;
+    }
+}
+.pg-bar{
+    position: absolute;
+    right: 20px;
+    height: 45px;
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    border-radius: 0 0 20px 20px;
+    background-color: #0F9015;
+    p{
+        color: white;
+    }
+}
+.og-2{
+    border: 2px solid var(--or);
+    border-right: none;
+    position: absolute;
+    width: 133px;
+    bottom: 10px;
+    left: -28px;
+    padding-left: 14px;
+    border-radius: 15px 0 0px 15px;
+
+  }

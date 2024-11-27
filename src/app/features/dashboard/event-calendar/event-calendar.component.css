@@ -1,0 +1,16 @@
+.img-back{
+    height: 60px;
+    width: 60px;
+    background-color: greenyellow;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../../../../assets/calender.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        margin-top: 15px;
+        font-size: 26px;
+        font-weight: 600;
+    }
+}

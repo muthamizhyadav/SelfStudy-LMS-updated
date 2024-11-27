@@ -1,0 +1,68 @@
+<app-header></app-header>
+<div class="px-[10px]">
+  <div class="flex w-full mt-[110px] gap-[15px]">
+    <div class="min-w-[240px]">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="min-w-[calc(100% - 280px)] w-full mt-[12px]">
+      <!-- cards-container  upper section-->
+      <section class="w-full flex gap-[10px]">
+        <div
+          class="w-[70%] h-full box-content pb-[20px] bg-white rounded-lg px-[10px]"
+        >
+          <h2 class="font-semibold my-[5px] text-black text-[20px]">
+            Diploma <span class="font-light"> in Business Management</span>
+          </h2>
+          <div class="flex items-center justify-between pr-[10px]">
+            <div class="flex items-center h-[60px] gap-[4px]">
+              <span
+                class="block h-[calc(100%-30px)] rounded-sm w-[4px] bg-[var(--ma)]"
+              ></span>
+              <p class="text-[14px] font-semibold">Introduction</p>
+            </div>
+
+            <div class="flex items-center">
+              <span class="red-ball"> </span>
+              <p>Due Date : <span class="font-semibold">TBD</span></p>
+            </div>
+          </div>
+          <div
+            class="w-full h-[300px] rounded-md bg-black flex items-center justify-center"
+          >
+            <img
+              class="h-full"
+              src="../../../assets/vid.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="title-cards">
+            <p (click)="changeTab('Overview')">
+              Overview
+              <span
+                class="inline-block h-[4px] rounded-xl w-full bg-[var(--or)]"
+              ></span>
+            </p>
+            <p (click)="changeTab('Essential Reading')">Essential Reading</p>
+            <p (click)="changeTab('Assignment Status')">Assignment Status</p>
+            <p (click)="changeTab('Certificates')">Certificates</p>
+          </div>
+          @if (tab == 'Overview') {
+            <app-overview></app-overview>
+          } @if(tab=='Essential Reading'){
+            <app-essential-reading></app-essential-reading>
+          } @if(tab=="Assignment Status"){
+            <app-assignment-status></app-assignment-status>
+          } @if(tab=="Certificates"){
+            <app-module></app-module>
+          }
+        </div>
+        <app-notes-and-observations class="w-[30%]" ></app-notes-and-observations>
+     
+        
+      </section>
+      <!-- course box lower section -->
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

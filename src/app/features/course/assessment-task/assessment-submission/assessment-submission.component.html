@@ -1,0 +1,90 @@
+<app-header></app-header>
+<div class="px-[10px]">
+  <div class="flex w-full mt-[110px] gap-[15px]">
+    <div class="min-w-[240px]">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="min-w-[calc(100% - 280px)] mt-[8px] w-full">
+      <section class="w-full flex gap-[10px]">
+        <div class="w-[70%] h-auto box-content py-[20px] bg-white rounded-lg">
+          <div
+            class="bg-[var(--ma)] flex items-center justify-between my-[5px] h-[40px] p-[8px] w-full"
+          >
+            <h2 class="font-semibold flex items-center text-white text-[16px]">
+              Assessment <span class="font-light ml-[4px]">Task</span>
+            </h2>
+            <ol class="list-disc text-white text-[14px]">
+              <li class="">
+                Due Date: <span class="font-semibold">27/08/2024</span>
+              </li>
+            </ol>
+          </div>
+          <div class="px-[10px]">
+            <div class="flex items-center h-[60px] gap-[4px]">
+              <span
+                class="block h-[calc(100%-30px)] rounded-sm w-[4px] bg-[var(--ma)]"
+              ></span>
+              <p class="text-[14px] font-semibold">
+                Personal and Professional Development Through Inclusive Practice
+              </p>
+            </div>
+            <p class="text-[var(--ma)] font-semibold">Question</p>
+            <ul class="list-[numeric]">
+              <p class="text-[13px] pl-[20px]">
+                1. In your own words, explain how inclusive practice in digital
+                marketing can improve customer engagement and brand loyalty.
+                Provide at least three specific examples from real-world
+                scenarios or hypothetical situations to support your
+                explanation.
+              </p>
+            </ul>
+            <p class="text-[var(--ma)] mt-[40px] font-semibold">
+              Instructions:
+            </p>
+            <ul class="list-disc text-[13px] ml-[20px]">
+              <li>Write a comprehensive response of at least 500 words.</li>
+              <li>
+                Use relevant theories and concepts discussed in the course.
+              </li>
+              <li>
+                Include real-world examples or hypothetical scenarios to
+                illustrate your points.
+              </li>
+              <li>
+                Make sure your answer is well-organized and clearly articulated.
+              </li>
+              <li>
+                You can use the text editor provided to compose your response
+                directly on the site.
+              </li>
+              <li>
+                Please submit your response before the timer runs out. The timer
+                is located at the top of the page.
+              </li>
+            </ul>
+            <textarea
+              class="w-full h-[250px] mt-[20px] border border-gray-500"
+              name=""
+              id=""
+            ></textarea>
+            <div class="w-full flex gap-4 items-end justify-end">
+              <button
+                class="h-[40px] text-[14px] border border-gray-400 justify-center w-[120px] flex items-center gap-1 text-black mt-[10px] rounded-[25px]"
+              >
+                Save Draft
+              </button>
+              <button
+                class="h-[40px] text-[14px] border bg-[var(--ma)] border-gray-400 justify-center w-[120px] flex items-center gap-1 text-white mt-[10px] rounded-[25px]"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+        <app-notes-and-observations class="w-[30%]" ></app-notes-and-observations>
+
+      </section>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,124 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --db:#1C2745;
+    --or:#DE4A2C;
+    --gr:#535352;
+    --ma:#8C2036;
+    --dgr:#232725;
+    --lgr:#E6E6E6;
+    --lb:#0056BB;
+}
+*{
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: var(--lgr);
+}
+.red-ball{
+    height: 8px;
+    display: inline-block;
+    margin-right: 5px;
+    width: 8px;
+    border-radius: 10px;
+    background-color: var(--ma);
+}
+.side-details{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    .usd{
+        background-color: var(--dgr);
+        border-radius: 15px 0 0px 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+          width: 100px;
+          padding-left: 20px;
+          height: 25px;
+          padding-right: 10px;
+          display: flex;
+          align-items: center;
+          justify-items: end;
+        p{
+            font-size: 14px;
+          
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: right;
+        }
+    }
+    .cl{
+        background-color: var(--ma);
+        border-radius: 15px 0 0px 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+          width: 180px;
+          padding-left: 10px;
+          height: 30px;
+          padding-right: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+        p{
+            font-size: 14px;
+            color: white;
+            font-weight: 400;
+            text-align: right;
+            text-decoration: none;
+        }
+    }
+    p{
+        font-size: 14px;
+        text-decoration: underline;
+    }
+}
+
+.black-select{
+    background: black;
+    color: white;
+    height: 40px;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: 10px;
+}
+.title-cards{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    p{
+        height: 40px;
+        cursor: pointer;
+        /* width: 90px; */
+        position: relative;
+        box-sizing: content-box;
+        align-items: center;
+        display: flex;
+        border-right: 1px solid var(--gr);
+        padding: 0 10px;
+        span{
+        position: absolute;
+        left: 15px;
+        bottom: 0;
+        width: calc(100% - 40px);
+            align-self: self-end;
+        }
+    }
+    .active-title{
+        border-bottom: 1px solid var(--or);
+    }
+}
+input,textarea,select{
+    background-color: white !important;
+    color: black;
+    option{
+        color: black;
+    }
+    
+}

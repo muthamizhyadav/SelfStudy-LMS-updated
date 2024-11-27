@@ -1,0 +1,20 @@
+<div class="border border-gray-300 rounded-lg ">
+    <button (click)="toggleAccordion()"
+        class="w-full flex items-center text-[22px] rounded-2xl bg-[#232725] justify-between p-5 font-medium text-white focus:outline-none border-b border-gray-300 "
+        [attr.aria-expanded]="isOpen">
+        <p>
+            <span class="font-bold">{{ title1 }}</span>
+            {{ title }}
+        </p>
+        <svg [ngClass]="{ 'rotate-180': isOpen }" class="w-5 h-5 transform transition-transform duration-300"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+    </button>
+    <div [ngStyle]="{ maxHeight: isOpen ? content.scrollHeight + 'px' : '0px' }" #content
+        class="overflow-hidden transition-all duration-300 ease-in-out">
+        <div class="p-5 text-gray-600">
+            <ng-content></ng-content>
+        </div>
+    </div>
+</div>

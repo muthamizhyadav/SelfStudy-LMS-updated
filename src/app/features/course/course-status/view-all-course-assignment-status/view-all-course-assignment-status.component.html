@@ -1,0 +1,575 @@
+<app-header></app-header>
+<div class="px-[10px]">
+  <div class="flex w-full mt-[110px] pt-[15px] gap-[10px]">
+    <div class="w-[240px]">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="min-w-[calc(100% - 280px)] w-[75%] ml-1 rounded-xl bg-[#ffff]">
+      <div
+        class="w-full flex p-2 gap-4 pl-5 text-white font-poppins mt-4 items-center bg-[#232725]"
+      >
+        <h1>
+          <svg
+            width="29"
+            height="29"
+            viewBox="0 0 29 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5 29C18.3456 29 22.0338 27.4723 24.753 24.753C27.4723 22.0338 29 18.3456 29 14.5C29 10.6544 27.4723 6.96623 24.753 4.24695C22.0338 1.52767 18.3456 0 14.5 0C10.6544 0 6.96623 1.52767 4.24695 4.24695C1.52767 6.96623 0 10.6544 0 14.5C0 18.3456 1.52767 22.0338 4.24695 24.753C6.96623 27.4723 10.6544 29 14.5 29ZM7.25 11.4792C7.25 10.9985 7.44096 10.5374 7.78087 10.1975C8.12078 9.85763 8.5818 9.66667 9.0625 9.66667H19.9375C20.4182 9.66667 20.8792 9.85763 21.2191 10.1975C21.559 10.5374 21.75 10.9985 21.75 11.4792C21.75 11.9599 21.559 12.4209 21.2191 12.7608C20.8792 13.1007 20.4182 13.2917 19.9375 13.2917H9.0625C8.5818 13.2917 8.12078 13.1007 7.78087 12.7608C7.44096 12.4209 7.25 11.9599 7.25 11.4792ZM7.25 17.5208C7.25 17.0401 7.44096 16.5791 7.78087 16.2392C8.12078 15.8993 8.5818 15.7083 9.0625 15.7083H17.5208C18.0015 15.7083 18.4626 15.8993 18.8025 16.2392C19.1424 16.5791 19.3333 17.0401 19.3333 17.5208C19.3333 18.0015 19.1424 18.4626 18.8025 18.8025C18.4626 19.1424 18.0015 19.3333 17.5208 19.3333H9.0625C8.5818 19.3333 8.12078 19.1424 7.78087 18.8025C7.44096 18.4626 7.25 18.0015 7.25 17.5208Z"
+              fill="#DE4A2C"
+            />
+          </svg>
+        </h1>
+        <h1 class="text-[22px]">
+          <span class="font-bold">Comprehensive</span> Course Progress and
+          Feedback
+        </h1>
+      </div>
+
+      <div class="head flex items-center max-h-[48px] h-[48px] mt-7 mb-5 ml-4">
+        <p class="w-[4px] rounded-t-3xl rounded-b-3xl h-10 bg-[#8C2036]"></p>
+        <p class="pl-4 text-[16px] text-[#535352] w-[90%]">
+          Welcome to the All Courses Status section. Here you can view the
+          detailed progress, feedback, and scores for all your enrolled courses.
+          Stay updated with your performance across all modules and ensure you
+          meet the requirements for successful completion of each course.
+        </p>
+      </div>
+
+      <div>
+        <app-accordian
+          class="mb-[20px]"
+          title1="01. Diploma"
+          title="in Business Management"
+        >
+          <h2
+            class="font-semibold my-[5px] h-[40px] p-[8px] bg-yellow-200 text-black text-[16px]"
+          >
+            Assignment
+            <span class="font-light">01: Managing people & organisations</span>
+          </h2>
+          <table
+            class="table-auto border rounded-lg border-slate-300 w-full bg-[#f7f7f7]"
+          >
+            <thead>
+              <tr>
+                <td>Score</td>
+                <td>85/100</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2" class="bg-[var(--db)] text-white">Feedback</td>
+              </tr>
+              <tr>
+                <td>Strength</td>
+                <td>
+                  Excellent understanding of management theories and their
+                  practical applications. Your analysis of case studies was
+                  thorough and insightful.
+                </td>
+              </tr>
+              <tr>
+                <td>Areas for Improvement:</td>
+                <td>
+                  Consider incorporating more recent examples and references to
+                  support your arguments.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h2
+            class="font-semibold h-[40px] p-[8px] my-[5px] bg-[var(--ma)] text-white text-[16px]"
+          >
+            Assignment
+            <span class="font-light">01: Managing people & organisations</span>
+          </h2>
+          <table
+            class="table-auto border rounded-lg border-slate-300 w-full bg-[#f7f7f7]"
+          >
+            <thead>
+              <tr>
+                <td>Score</td>
+                <td>(TBH)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2" class="bg-[var(--db)] text-white">Feedback</td>
+              </tr>
+              <tr>
+                <td>Strength</td>
+                <td>(TBH)</td>
+              </tr>
+              <tr>
+                <td>Areas for Improvement:</td>
+                <td>(TBH)</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2
+            class="font-semibold h-[40px] p-[8px] my-[5px] bg-[var(--ma)] text-white text-[16px]"
+          >
+            Assignment
+            <span class="font-light">01: Managing people & organisations</span>
+          </h2>
+          <table
+            class="table-auto border rounded-lg border-slate-300 w-full bg-[#f7f7f7]"
+          >
+            <thead>
+              <tr>
+                <td>Score</td>
+                <td>(TBH)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2" class="bg-[var(--db)] text-white">Feedback</td>
+              </tr>
+              <tr>
+                <td>Strength</td>
+                <td>(TBH)</td>
+              </tr>
+              <tr>
+                <td>Areas for Improvement:</td>
+                <td>(TBH)</td>
+              </tr>
+            </tbody>
+          </table>
+        </app-accordian>
+
+        <app-accordian title1="02. Diploma" title="in Business Management">
+        </app-accordian>
+
+        <app-accordian title1="03. Diploma" title="in Business Management">
+          <p>
+            JavaScript is a versatile programming language commonly used for
+            creating interactive effects within web browsers.
+          </p>
+        </app-accordian>
+      </div>
+    </div>
+    <div
+      class="min-w-[calc(100% - 280px)] w-[25%] ml-1 rounded-xl bg-[#f7f7f7]"
+    >
+      <div class="flex items-center justify-center h-[80px]">
+        <p class="border-b-2 border-b-[var(--ma)]">Featured Courses</p>
+      </div>
+      <div class="flex flex-col gap-[20px] justify-evenly items-center">
+        <div
+          [routerLink]="['payment']"
+          class="relative flex flex-col border border-gray-400 justify-between w-[280px] h-[340px] pb-[10px] bg-white rounded-lg"
+        >
+          <div class="flex items-center h-[60px] gap-[4px] pl-[20px]">
+            <span
+              class="block h-[calc(100%-30px)] rounded-sm w-[4px] bg-[var(--ma)]"
+            ></span>
+            <p class="text-[14px] font-semibold">
+              Diploma in Digital Marketing (WUC Level 8)
+            </p>
+          </div>
+          <div class="h-[180px]">
+            <img src="../../../assets/teacher.png" alt="" srcset="" />
+          </div>
+          <div class="h-[130px] relative">
+            <div class="side-details">
+              <div class="usd">
+                <p>1000 USD</p>
+              </div>
+              <div class="cl">
+                <p>start Learning</p>
+                <svg
+                  width="10"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.76383 8.49844L1.27781 15.8099C1.13622 15.9319 0.948103 16 0.752481 16C0.556858 16 0.368743 15.9319 0.22715 15.8099L0.218013 15.8016C0.149133 15.7424 0.094286 15.6712 0.0568066 15.5923C0.0193272 15.5133 0 15.4283 0 15.3424C0 15.2565 0.0193272 15.1715 0.0568066 15.0925C0.094286 15.0136 0.149133 14.9424 0.218013 14.8832L8.20915 7.99862L0.218013 1.11681C0.149133 1.05764 0.094286 0.986415 0.0568066 0.907473C0.0193272 0.82853 0 0.743518 0 0.657608C0 0.571698 0.0193272 0.486687 0.0568066 0.407743C0.094286 0.328801 0.149133 0.257578 0.218013 0.198408L0.22715 0.190145C0.368743 0.0680895 0.556858 0 0.752481 0C0.948103 0 1.13622 0.0680895 1.27781 0.190145L9.76383 7.50156C9.83846 7.56586 9.89787 7.64319 9.93847 7.72887C9.97907 7.81455 10 7.90679 10 8C10 8.09321 9.97907 8.18545 9.93847 8.27113C9.89787 8.35681 9.83846 8.43415 9.76383 8.49844Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <p class="mr-[10px]">More Details</p>
+            </div>
+            <div class="h-full">
+              <ol class="pl-[20px] h-full flex flex-col justify-around">
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>Duration :
+                  <span class="font-semibold">3 Months</span>
+                </li>
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>Start date :
+                  <span class="font-semibold">01/2024</span>
+                </li>
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>End Date :
+                  <span class="font-semibold">-</span>
+                </li>
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>Credits Earned :
+                  <span class="font-semibold">30</span>
+                </li>
+                <li class="text-[13px] flex items-center">
+                  <span class="red-ball"></span>Course Progress :
+                  <span class="font-semibold">
+                    <div class="relative size-8">
+                      <svg
+                        class="size-full -rotate-90"
+                        viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <!-- Background Circle -->
+                        <circle
+                          cx="18"
+                          cy="18"
+                          r="16"
+                          fill="none"
+                          class="stroke-current text-gray-200 dark:text-neutral-700"
+                          stroke-width="2"
+                        ></circle>
+                        <!-- Progress Circle -->
+                        <circle
+                          cx="18"
+                          cy="18"
+                          r="16"
+                          fill="none"
+                          class="stroke-current text-green-600 dark:text-green-500"
+                          stroke-width="2"
+                          stroke-dasharray="100"
+                          stroke-dashoffset="65"
+                          stroke-linecap="round"
+                        ></circle>
+                      </svg>
+
+                      <!-- Percentage Text -->
+                      <div
+                        class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
+                      >
+                        <span
+                          class="text-center text-[12px] font-bold text-green-600 dark:text-green-500"
+                          >70%</span
+                        >
+                      </div>
+                    </div>
+                  </span>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div
+          [routerLink]="['combo']"
+          class="relative flex flex-col justify-between border border-gray-400 justify-between w-[280px] h-[340px] pb-[10px] bg-white rounded-lg"
+        >
+          <div class="flex items-center h-[60px] gap-[4px] pl-[20px]">
+            <span
+              class="block h-[calc(100%-30px)] rounded-sm w-[4px] bg-[var(--ma)]"
+            ></span>
+            <p class="text-[14px] font-semibold">
+              Diploma in Business Management
+            </p>
+          </div>
+          <div class="h-[180px]">
+            <img src="../../../assets/cr1.png" alt="" srcset="" />
+          </div>
+          <div class="h-[130px] relative">
+            <div class="side-details">
+              <div class="usd">
+                <p>1000 USD</p>
+              </div>
+              <div class="cl">
+                <p>start Learning</p>
+                <svg
+                  width="10"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.76383 8.49844L1.27781 15.8099C1.13622 15.9319 0.948103 16 0.752481 16C0.556858 16 0.368743 15.9319 0.22715 15.8099L0.218013 15.8016C0.149133 15.7424 0.094286 15.6712 0.0568066 15.5923C0.0193272 15.5133 0 15.4283 0 15.3424C0 15.2565 0.0193272 15.1715 0.0568066 15.0925C0.094286 15.0136 0.149133 14.9424 0.218013 14.8832L8.20915 7.99862L0.218013 1.11681C0.149133 1.05764 0.094286 0.986415 0.0568066 0.907473C0.0193272 0.82853 0 0.743518 0 0.657608C0 0.571698 0.0193272 0.486687 0.0568066 0.407743C0.094286 0.328801 0.149133 0.257578 0.218013 0.198408L0.22715 0.190145C0.368743 0.0680895 0.556858 0 0.752481 0C0.948103 0 1.13622 0.0680895 1.27781 0.190145L9.76383 7.50156C9.83846 7.56586 9.89787 7.64319 9.93847 7.72887C9.97907 7.81455 10 7.90679 10 8C10 8.09321 9.97907 8.18545 9.93847 8.27113C9.89787 8.35681 9.83846 8.43415 9.76383 8.49844Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <p class="mr-[10px]">More Details</p>
+            </div>
+            <div class="h-full">
+              <ol class="pl-[20px] h-full flex flex-col justify-around">
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>Duration :
+                  <span class="font-semibold">3 Months</span>
+                </li>
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>Start date :
+                  <span class="font-semibold">01/2024</span>
+                </li>
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>End Date :
+                  <span class="font-semibold">-</span>
+                </li>
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>Credits Earned :
+                  <span class="font-semibold">30</span>
+                </li>
+                <li class="text-[13px] flex items-center">
+                  <span class="red-ball"></span>Course Progress :
+                  <span class="font-semibold">
+                    <div class="relative size-8">
+                      <svg
+                        class="size-full -rotate-90"
+                        viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <!-- Background Circle -->
+                        <circle
+                          cx="18"
+                          cy="18"
+                          r="16"
+                          fill="none"
+                          class="stroke-current text-gray-200 dark:text-neutral-700"
+                          stroke-width="2"
+                        ></circle>
+                        <!-- Progress Circle -->
+                        <circle
+                          cx="18"
+                          cy="18"
+                          r="16"
+                          fill="none"
+                          class="stroke-current text-green-600 dark:text-green-500"
+                          stroke-width="2"
+                          stroke-dasharray="100"
+                          stroke-dashoffset="65"
+                          stroke-linecap="round"
+                        ></circle>
+                      </svg>
+
+                      <!-- Percentage Text -->
+                      <div
+                        class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
+                      >
+                        <span
+                          class="text-center text-[12px] font-bold text-green-600 dark:text-green-500"
+                          >70%</span
+                        >
+                      </div>
+                    </div>
+                  </span>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div
+          [routerLink]="['details']"
+          class="relative flex flex-col justify-between border border-gray-400 justify-between w-[280px] h-[340px] pb-[10px] bg-white rounded-lg"
+        >
+          <div class="flex items-center h-[60px] gap-[4px] pl-[20px]">
+            <span
+              class="block h-[calc(100%-30px)] rounded-sm w-[4px] bg-[var(--ma)]"
+            ></span>
+            <p class="text-[14px] font-semibold">Diploma in Business Finance</p>
+          </div>
+          <div class="h-[180px]">
+            <img src="../../../assets/cr2.png" alt="" srcset="" />
+          </div>
+          <div class="h-[130px] relative">
+            <div class="side-details">
+              <div class="usd">
+                <p>1000 USD</p>
+              </div>
+              <div class="cl">
+                <p>start Learning</p>
+                <svg
+                  width="10"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.76383 8.49844L1.27781 15.8099C1.13622 15.9319 0.948103 16 0.752481 16C0.556858 16 0.368743 15.9319 0.22715 15.8099L0.218013 15.8016C0.149133 15.7424 0.094286 15.6712 0.0568066 15.5923C0.0193272 15.5133 0 15.4283 0 15.3424C0 15.2565 0.0193272 15.1715 0.0568066 15.0925C0.094286 15.0136 0.149133 14.9424 0.218013 14.8832L8.20915 7.99862L0.218013 1.11681C0.149133 1.05764 0.094286 0.986415 0.0568066 0.907473C0.0193272 0.82853 0 0.743518 0 0.657608C0 0.571698 0.0193272 0.486687 0.0568066 0.407743C0.094286 0.328801 0.149133 0.257578 0.218013 0.198408L0.22715 0.190145C0.368743 0.0680895 0.556858 0 0.752481 0C0.948103 0 1.13622 0.0680895 1.27781 0.190145L9.76383 7.50156C9.83846 7.56586 9.89787 7.64319 9.93847 7.72887C9.97907 7.81455 10 7.90679 10 8C10 8.09321 9.97907 8.18545 9.93847 8.27113C9.89787 8.35681 9.83846 8.43415 9.76383 8.49844Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <p class="mr-[10px]">More Details</p>
+            </div>
+            <div class="h-full">
+              <ol class="pl-[20px] h-full flex flex-col justify-around">
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>Duration :
+                  <span class="font-semibold">3 Months</span>
+                </li>
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>Start date :
+                  <span class="font-semibold">01/2024</span>
+                </li>
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>End Date :
+                  <span class="font-semibold">-</span>
+                </li>
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>Credits Earned :
+                  <span class="font-semibold">30</span>
+                </li>
+                <li class="text-[13px] flex items-center">
+                  <span class="red-ball"></span>Course Progress :
+                  <span class="font-semibold">
+                    <div class="relative size-8">
+                      <svg
+                        class="size-full -rotate-90"
+                        viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <!-- Background Circle -->
+                        <circle
+                          cx="18"
+                          cy="18"
+                          r="16"
+                          fill="none"
+                          class="stroke-current text-gray-200 dark:text-neutral-700"
+                          stroke-width="2"
+                        ></circle>
+                        <!-- Progress Circle -->
+                        <circle
+                          cx="18"
+                          cy="18"
+                          r="16"
+                          fill="none"
+                          class="stroke-current text-green-600 dark:text-green-500"
+                          stroke-width="2"
+                          stroke-dasharray="100"
+                          stroke-dashoffset="65"
+                          stroke-linecap="round"
+                        ></circle>
+                      </svg>
+
+                      <!-- Percentage Text -->
+                      <div
+                        class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
+                      >
+                        <span
+                          class="text-center text-[12px] font-bold text-green-600 dark:text-green-500"
+                          >70%</span
+                        >
+                      </div>
+                    </div>
+                  </span>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div
+          [routerLink]="['details']"
+          class="relative flex flex-col justify-between border border-gray-400 justify-between w-[280px] h-[340px] pb-[10px] bg-white rounded-lg"
+        >
+          <div class="flex items-center h-[60px] gap-[4px] pl-[20px]">
+            <span
+              class="block h-[calc(100%-30px)] rounded-sm w-[4px] bg-[var(--ma)]"
+            ></span>
+            <p class="text-[14px] font-semibold">Project Management</p>
+          </div>
+          <div class="h-[180px]">
+            <img src="../../../assets/cr3.png" alt="" srcset="" />
+          </div>
+          <div class="h-[130px] relative">
+            <div class="side-details">
+              <div class="usd">
+                <p>1000 USD</p>
+              </div>
+              <div class="cl">
+                <p>start Learning</p>
+                <svg
+                  width="10"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.76383 8.49844L1.27781 15.8099C1.13622 15.9319 0.948103 16 0.752481 16C0.556858 16 0.368743 15.9319 0.22715 15.8099L0.218013 15.8016C0.149133 15.7424 0.094286 15.6712 0.0568066 15.5923C0.0193272 15.5133 0 15.4283 0 15.3424C0 15.2565 0.0193272 15.1715 0.0568066 15.0925C0.094286 15.0136 0.149133 14.9424 0.218013 14.8832L8.20915 7.99862L0.218013 1.11681C0.149133 1.05764 0.094286 0.986415 0.0568066 0.907473C0.0193272 0.82853 0 0.743518 0 0.657608C0 0.571698 0.0193272 0.486687 0.0568066 0.407743C0.094286 0.328801 0.149133 0.257578 0.218013 0.198408L0.22715 0.190145C0.368743 0.0680895 0.556858 0 0.752481 0C0.948103 0 1.13622 0.0680895 1.27781 0.190145L9.76383 7.50156C9.83846 7.56586 9.89787 7.64319 9.93847 7.72887C9.97907 7.81455 10 7.90679 10 8C10 8.09321 9.97907 8.18545 9.93847 8.27113C9.89787 8.35681 9.83846 8.43415 9.76383 8.49844Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <p class="mr-[10px]">More Details</p>
+            </div>
+            <div class="h-full">
+              <ol class="pl-[20px] h-full flex flex-col justify-around">
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>Duration :
+                  <span class="font-semibold">3 Months</span>
+                </li>
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>Start date :
+                  <span class="font-semibold">01/2024</span>
+                </li>
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>End Date :
+                  <span class="font-semibold">-</span>
+                </li>
+                <li class="text-[13px]">
+                  <span class="red-ball"></span>Credits Earned :
+                  <span class="font-semibold">30</span>
+                </li>
+                <li class="text-[13px] flex items-center">
+                  <span class="red-ball"></span>Course Progress :
+                  <span class="font-semibold">
+                    <div class="relative size-8">
+                      <svg
+                        class="size-full -rotate-90"
+                        viewBox="0 0 36 36"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <!-- Background Circle -->
+                        <circle
+                          cx="18"
+                          cy="18"
+                          r="16"
+                          fill="none"
+                          class="stroke-current text-gray-200 dark:text-neutral-700"
+                          stroke-width="2"
+                        ></circle>
+                        <!-- Progress Circle -->
+                        <circle
+                          cx="18"
+                          cy="18"
+                          r="16"
+                          fill="none"
+                          class="stroke-current text-green-600 dark:text-green-500"
+                          stroke-width="2"
+                          stroke-dasharray="100"
+                          stroke-dashoffset="65"
+                          stroke-linecap="round"
+                        ></circle>
+                      </svg>
+
+                      <!-- Percentage Text -->
+                      <div
+                        class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
+                      >
+                        <span
+                          class="text-center text-[12px] font-bold text-green-600 dark:text-green-500"
+                          >70%</span
+                        >
+                      </div>
+                    </div>
+                  </span>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
