@@ -18,7 +18,8 @@ import { CommonModule } from '@angular/common';
 export class CourseHomeComponent {
 
   showPopup = false;
-
+  titles=['Recommended for you','Diplomas','CPD']
+  activeTitle:any = 'Diplomas'
   handleConfirm() {
     console.log('Confirmed!');
     this.showPopup = false;

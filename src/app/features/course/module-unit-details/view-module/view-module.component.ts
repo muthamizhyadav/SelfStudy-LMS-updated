@@ -17,6 +17,8 @@ import { ModuleComponent } from "../../course-unit-detail/module/module.componen
 })
 export class ViewModuleComponent {
   tab:any ='Overview'
+   titles=['Overview','Essential Reading','Assignment Status','Certificates']
+  activeTitle:any = 'Diplomas'
   changeTab(v:any){
     this.tab = v
   }

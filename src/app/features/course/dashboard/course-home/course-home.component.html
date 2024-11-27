@@ -17,16 +17,14 @@
       <!-- course box lower section -->
       <section class="xl:flex-col sm:flex-col gap-[10px] flex w-full">
         <div class="title-cards ">
-          <p>
-            Recommended for you
-            <span></span>
-          </p>
-          <p class="active-title">Diplomas
-            <span></span>
-          </p>
-          <p>CPD
-            <span></span>
-          </p>
+          @for (item of titles; track $index) {
+            <p (click)="activeTitle = item" [class.active-title]="activeTitle == item" >
+              {{item}}
+              <span></span>
+            </p>
+          }
+         
+         
         </div>
         <app-recommended-courses></app-recommended-courses>
        

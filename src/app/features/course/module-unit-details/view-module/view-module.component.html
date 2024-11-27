@@ -31,21 +31,20 @@
           >
             <img
               class="h-full"
-              src="../../../assets/vid.png"
+              src="vid.png"
               alt=""
               srcset=""
             />
           </div>
           <div class="title-cards">
-            <p (click)="changeTab('Overview')">
-              Overview
-              <span
-                class="inline-block h-[4px] rounded-xl w-full bg-[var(--or)]"
-              ></span>
-            </p>
-            <p (click)="changeTab('Essential Reading')">Essential Reading</p>
-            <p (click)="changeTab('Assignment Status')">Assignment Status</p>
-            <p (click)="changeTab('Certificates')">Certificates</p>
+            @for (item of titles; track $index) {
+              <p (click)="changeTab(item)" [class.active-title]="tab == item" >
+                {{item}}
+                <span></span>
+              </p>
+            }
+           
+       
           </div>
           @if (tab == 'Overview') {
             <app-overview></app-overview>

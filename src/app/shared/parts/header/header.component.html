@@ -28,8 +28,9 @@
     <div class="free_learn">
       <img src="Free_learn_logo.svg" class="min-w-[100px]" width="130" alt="" />
     </div>
-    <div  (click)="select = !select" class="relative">
-      <img  src="Westward_gate_logo.svg" class="min-w-[100px]" alt="" />
+    <div  (click)="select = !select" class="flex items-center gap-2 relative">
+      <img  src="Westward_gate_logo.svg" class="min-w-[100px]" alt= "" />
+      <img [class.rotate-up]="select" class="h-[15px] w-[15px] img-holder" src="downarrow.svg" alt="" srcset="">
       <!-- select -->
        @if(select == true){
         <div

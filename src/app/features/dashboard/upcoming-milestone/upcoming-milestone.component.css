@@ -196,3 +196,32 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+/* Base Scrollbar Styling */
+/* Base Scrollbar Styling */
+.scrollbar-custom {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: gray white; /* For Firefox */
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 10px; /* Scrollbar width */
+  height: 10px; /* Horizontal scrollbar height */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: white; /* Track color */
+  border-radius: 10px; /* Rounded track corners */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: gray; /* Thumb color */
+  border-radius: 10px; /* Fully rounded thumb */
+  border: 2px solid white; /* Spacing around thumb */
+}
+
+.scrollbar-custom::-webkit-scrollbar-button {
+  display: none; /* Completely hides the arrows */
+  width: 0; /* Ensures no space is left for buttons */
+  height: 0; /* Ensures no space is left for buttons */
+}
+

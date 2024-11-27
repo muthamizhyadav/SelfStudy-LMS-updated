@@ -1,8 +1,38 @@
-.title-cards{
-    p{
-        font-size: 15px;
-    }
+.title-cards {
+    display: flex;
+    align-items: center;
+    height: 70px;
 }
+.title-cards p {
+    height: 40px;
+    position: relative;
+    box-sizing: content-box;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    border-right: 1px solid #5352523d;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.title-cards p span {
+    position: absolute;
+    bottom: 0; /* Stick to the bottom of the parent <p> */
+    left: 50%; /* Start positioning from the center */
+    transform: translateX(-50%); /* Center horizontally */
+    width: calc(100% - 50px); /* Adjust width for padding */
+    height: 4px;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: all 0.3s ease; /* Smooth animation for the underline */
+}
+.title-cards p.active-title {
+    border-bottom: none; /* Remove the default border-bottom if any */
+}
+.title-cards p.active-title span {
+    background-color: var(--or); /* Set the orange underline */
+    width: calc(100% - 25px); /* Adjust padding for the underline */
+}
+
 .table-auto{
     margin-bottom:  40px ;
     td{

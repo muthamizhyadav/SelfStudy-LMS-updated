@@ -89,4 +89,9 @@
       opacity: 1;
     }
   }
-  
+  .img-holder{
+        transition: 100ms ease-in-out;
+  }
+  .rotate-up{
+        rotate: 180deg;
+  }
