@@ -10,7 +10,7 @@
       <section class="h-[320px] xl:flex-row  gap-[10px] flex items-center w-full">
         <!-- progress course -->
         <app-enrolled-course-detail class=" flex-grow-[1.8] "></app-enrolled-course-detail>
-     
+
         <!-- video -->
         <app-resume-learning class="flex-grow-[1.2] "></app-resume-learning>
       </section>
@@ -27,22 +27,23 @@
          
         </div>
         <app-recommended-courses></app-recommended-courses>
-       
+
       </section>
     </div>
   </div>
 </div>
 
 <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center z-50 " *ngIf="showPopup">
-  <div class="relative bg-white rounded-lg shadow-lg w-[50%] ml-[14%] max-h-[90%] overflow-x-auto">
-    <button class="absolute top-4 left-[104%] text-gray-400 hover:text-gray-600 focus:outline-none"
-      (click)="handleCancel()" aria-label="Close">
-      <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 10L27 27M10 27L27 10" stroke="white" stroke-width="2" stroke-linecap="round"
-          stroke-linejoin="round" />
-        <circle cx="18.5" cy="18.5" r="17.5" stroke="white" stroke-width="2" />
-      </svg>
-    </button>
+  <button class="absolute top-12 left-[65%] text-red-900 focus:outline-none" (click)="handleCancel()"
+    aria-label="Close">
+    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 10L27 27M10 27L27 10" stroke="white" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+      <circle cx="18.5" cy="18.5" r="17.5" stroke="white" stroke-width="2" />
+    </svg>
+  </button>
+  <div class="relative bg-white rounded-lg shadow-lg w-[50%] ml-[14%] overflow-auto max-h-[90%]">
+
     <h2 class="mt-10 w-full bg-[#1C2745] text-white pl-10 text-[44px]">About</h2>
     <div class="flex gap-4 items-center pl-10 mt-4">
       <p class="w-1 h-12 rounded-t-full rounded-b-full bg-[#8C2036]"></p>
@@ -88,14 +89,14 @@
       <p class="h-[4px] w-[40px] rounded-l-full rounded-r-full  bg-[#1C2745]"></p>
     </div>
 
-    <div class="w-[80%] mt-10 m-auto flex justify-between">
+    <div class="w-[85%] mt-10 m-auto flex justify-between">
       <h1>Module List</h1>
       <h1>Credits</h1>
     </div>
 
-    <div class="w-[85%] mt-10 m-auto border border-[#E6E6E6] rounded-lg flex justify-between">
-      <div class="mt-4 flex justify-between">
-        <p class="flex gap-2">
+    <div class="w-[90%] mt-10 m-auto border border-[#E6E6E6] rounded-lg mb-10">
+      <div class="mt-4 w-[100%] flex justify-between">
+        <p class="flex items-center ml-2 gap-2">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="7" cy="7" r="7" fill="#8C2036" />
             <path
@@ -104,7 +105,254 @@
           </svg>
           Marketing Principles
         </p>
-        <p></p>
+        <p class="mr-8">28</p>
+      </div>
+      <div class="w-[90%] pl-8 pt-5 text-[#535353]">
+        <p>This module is designed to introduce learners to key principles of marketing, enabling them to develop a
+          sound marketing plan. Learners will be introduced to and relevant frameworks, models, theories, and concepts
+          marketing for application to achieve results. Contemporary know-how of undertaking marketing analytics and
+          digital and social media marketing will help learners relate to real-world examples, including
+          products/services that they encounter in their own daily lives.</p>
+      </div>
+
+      <p class="w-[98%] h-[1px] m-auto mt-10 mb-5 bg-gray-300"></p>
+      <div class="mt-4 w-[100%] flex justify-between">
+        <p class="flex items-center ml-2 gap-2">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7" cy="7" r="7" fill="#8C2036" />
+            <path
+              d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+              fill="white" />
+          </svg>
+          Marketing Principles
+        </p>
+        <p class="mr-8">28</p>
+      </div>
+      <div class="w-[90%] pl-8 pt-5 text-[#535353] mb-10">
+        <p>This module is designed to introduce learners to key principles of marketing, enabling them to develop a
+          sound marketing plan. Learners will be introduced to and relevant frameworks, models, theories, and concepts
+          marketing for application to achieve results. Contemporary know-how of undertaking marketing analytics and
+          digital and social media marketing will help learners relate to real-world examples, including
+          products/services that they encounter in their own daily lives.</p>
+      </div>
+
+    </div>
+
+    <div class="mt-5 pl-10 mb-5">
+      <p class="text-[20px] text-[#1C2745]">Key Learnings:</p>
+      <p class="h-[4px] w-[60px] rounded-l-full rounded-r-full  bg-[#1C2745]"></p>
+    </div>
+
+
+    <div class="w-[90%] mt-10 m-auto border border-[#E6E6E6] rounded-lg mb-8">
+      <div class="mt-4 w-[100%] mb-4 flex justify-between">
+        <p class="ml-2 mt-1">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7" cy="7" r="7" fill="#1C2745" />
+            <path
+              d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+              fill="white" />
+          </svg>
+
+        </p>
+        <p class="flex pl-2 gap-2 text-[#6D6D6D]">
+          Gain a strong foundation in marketing principles, including frameworks, models, theories, and concepts that
+          are essential for developing effective marketing strategies.
+        </p>
+      </div>
+      <p class="w-[98%] h-[1px] m-auto mb-2 bg-gray-300"></p>
+
+      <div class="mt-4 w-[100%] mb-4 flex justify-between">
+        <p class="ml-2 mt-1">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7" cy="7" r="7" fill="#1C2745" />
+            <path
+              d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+              fill="white" />
+          </svg>
+
+        </p>
+        <p class="flex pl-2 gap-2 text-[#6D6D6D]">
+          Gain a strong foundation in marketing principles, including frameworks, models, theories, and concepts that
+          are essential for developing effective marketing strategies.
+        </p>
+      </div>
+      <p class="w-[98%] h-[1px] m-auto mb-2 bg-gray-300"></p>
+
+      <div class="mt-4 w-[100%] mb-4 flex justify-between">
+        <p class="ml-2 mt-1">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7" cy="7" r="7" fill="#1C2745" />
+            <path
+              d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+              fill="white" />
+          </svg>
+
+        </p>
+        <p class="flex pl-2 gap-2 text-[#6D6D6D]">
+          Gain a strong foundation in marketing principles, including frameworks, models, theories, and concepts that
+          are essential for developing effective marketing strategies.
+        </p>
+      </div>
+      <p class="w-[98%] h-[1px] m-auto bg-gray-300 mb-10"></p>
+    </div>
+    <h1 class=" w-[90%] m-auto font-semibold text-[18px] text-[#8C2036]">Who is this program for?</h1>
+    <div class="w-[100%] p-4 bg-[#8C2036] mt-5 mb-10">
+      <p class="text-white w-[95%] m-auto">
+        Individuals who are presently employed and want to get a formal certification should pursue the Diploma in
+        Digital Marketing. It is also useful for firms that want to provide their staff with short, ongoing professional
+        development courses. The Diploma will also be appropriate for mature candidates who have not attended school for
+        some time, as well as recent graduates who are pursuing an apprenticeship program in Digital Marketing.
+      </p>
+    </div>
+
+    <div class="mt-5 pl-10">
+      <p class="text-[20px] text-[#1C2745]">Career Progression</p>
+      <p class="h-[4px] w-[70px] rounded-l-full rounded-r-full  bg-[#1C2745]"></p>
+    </div>
+
+    <div class="flex flex-wrap gap-5 w-[90%] m-auto mt-5">
+      <p class="flex gap-2 items-center bg-[#232725] px-4 py-2 rounded-[15px] text-white text-[16px]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="7" cy="7" r="7" fill="#DE4A2C" />
+          <path
+            d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+            fill="white" />
+        </svg>
+        SEO Specialist
+      </p>
+
+      <p class="flex gap-2 items-center bg-[#232725] px-4 py-2 rounded-[15px] text-white text-[16px]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="7" cy="7" r="7" fill="#DE4A2C" />
+          <path
+            d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+            fill="white" />
+        </svg>
+        Social Media Specialist
+      </p>
+
+      <p class="flex gap-2 items-center bg-[#232725] px-4 py-2 rounded-[15px] text-white text-[16px]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="7" cy="7" r="7" fill="#DE4A2C" />
+          <path
+            d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+            fill="white" />
+        </svg>
+        Email Marketing Specialist
+      </p>
+
+      <p class="flex gap-2 items-center bg-[#232725] px-4 py-2 rounded-[15px] text-white text-[16px]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="7" cy="7" r="7" fill="#DE4A2C" />
+          <path
+            d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+            fill="white" />
+        </svg>
+        Marketing Copy Writer
+      </p>
+
+      <p class="flex gap-2 items-center bg-[#232725] px-4 py-2 rounded-[15px] text-white text-[16px]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="7" cy="7" r="7" fill="#DE4A2C" />
+          <path
+            d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+            fill="white" />
+        </svg>
+        Content Strategist
+      </p>
+
+      <p class="flex gap-2 items-center bg-[#232725] px-4 py-2 rounded-[15px] text-white text-[16px]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="7" cy="7" r="7" fill="#DE4A2C" />
+          <path
+            d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+            fill="white" />
+        </svg>
+        Search Engine Marketing Specialist
+      </p>
+
+      <p class="flex gap-2 items-center bg-[#232725] px-4 py-2 rounded-[15px] text-white text-[16px]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="7" cy="7" r="7" fill="#DE4A2C" />
+          <path
+            d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+            fill="white" />
+        </svg>
+        Professional Blogger
+      </p>
+
+      <p class="flex gap-2 items-center bg-[#232725] px-4 py-2 rounded-[15px] text-white text-[16px]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="7" cy="7" r="7" fill="#DE4A2C" />
+          <path
+            d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+            fill="white" />
+        </svg>
+        Business Analytics Specialist
+      </p>
+
+    </div>
+
+    <div class="w-[100%] h-[38px] pl-10 text-[20px] content-center bg-[#D9D9D9] mt-8">
+      About Scottish Qualifications Authority (SQA)
+    </div>
+    <img src="sqa.png" class="w-[20%] h-[100px] mt-8 ml-10" alt="">
+    <p class="w-[90%] m-auto mt-5 text-[#535353]">
+      The Scottish Qualifications Authority – SQA, sponsored by the Scottish Government’s Learning Directorate, has two primary roles: accreditation and qualifications. It accredits credentials other than degrees and approves and guarantees quality to notify bodies that intend to admit individuals for such qualifications. The awarding body, on the other hand, refers to the development and implementation, validation, evaluation, qualifications, and ensuring that they are up to date and that certificates are issued to candidates. Under these functions, the SQA provides a variety of services for companies and training providers, from training courses and central approvals to personalized awards, credit scores, and licensing services.
+    </p>
+
+    <h1 class="w-[90%] m-auto mt-5 text-[18px] font-[500]">Why SQA</h1>
+
+    <div class="w-[90%] mt-10 m-auto border border-[#E6E6E6] rounded-lg mb-8">
+      <div class="mt-4 w-[100%] mb-4 flex justify-between">
+        <p class="ml-2 mt-1">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7" cy="7" r="7" fill="#1C2745" />
+            <path
+              d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+              fill="white" />
+          </svg>
+
+        </p>
+        <p class="flex pl-2 gap-2 text-[#6D6D6D]">
+          Gain a strong foundation in marketing principles, including frameworks, models, theories, and concepts that
+          are essential for developing effective marketing strategies.
+        </p>
+      </div>
+      <p class="w-[98%] h-[1px] m-auto mb-2 bg-gray-300"></p>
+
+      <div class="mt-4 w-[100%] mb-4 flex justify-between">
+        <p class="ml-2 mt-1">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7" cy="7" r="7" fill="#1C2745" />
+            <path
+              d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+              fill="white" />
+          </svg>
+
+        </p>
+        <p class="flex pl-2 gap-2 text-[#6D6D6D]">
+          Gain a strong foundation in marketing principles, including frameworks, models, theories, and concepts that
+          are essential for developing effective marketing strategies.
+        </p>
+      </div>
+      <p class="w-[98%] h-[1px] m-auto mb-2 bg-gray-300"></p>
+
+      <div class="mt-4 w-[100%] mb-4 flex justify-between">
+        <p class="ml-2 mt-1">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7" cy="7" r="7" fill="#1C2745" />
+            <path
+              d="M5.15296 10.8239C5.05502 10.7111 5 10.5582 5 10.3987C5 10.2392 5.05502 10.0863 5.15296 9.97348L7.73897 6.99637L5.15296 4.01926C5.0578 3.90583 5.00514 3.7539 5.00633 3.59621C5.00752 3.43851 5.06246 3.28767 5.15932 3.17616C5.25619 3.06464 5.38722 3.00139 5.5242 3.00002C5.66117 2.99865 5.79314 3.05927 5.89167 3.16883L8.84704 6.57115C8.94498 6.68394 9 6.83689 9 6.99637C9 7.15585 8.94498 7.3088 8.84704 7.42158L5.89167 10.8239C5.7937 10.9367 5.66084 11 5.52232 11C5.38379 11 5.25093 10.9367 5.15296 10.8239Z"
+              fill="white" />
+          </svg>
+
+        </p>
+        <p class="flex pl-2 gap-2 text-[#6D6D6D]">
+          Gain a strong foundation in marketing principles, including frameworks, models, theories, and concepts that
+          are essential for developing effective marketing strategies.
+        </p>
       </div>
     </div>
 
