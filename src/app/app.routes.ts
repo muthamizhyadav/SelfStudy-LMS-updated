@@ -12,54 +12,59 @@ import { ViewQuizResultComponent } from './features/course/quiz/view-quiz-result
 import { AssessmentSubmissionComponent } from './features/course/assessment-task/assessment-submission/assessment-submission.component';
 import { PersonalInformationComponent } from './features/course/student-admission-form/personal-information/personal-information.component';
 import { StudentDeclarationComponent } from './features/course/student-admission-form/student-declaration/student-declaration.component';
+import { ViewWebinarComponent } from './features/webinar/view-webinar/view-webinar.component';
 
 export const routes: Routes = [
-    { path: '', component:LoginComponent, pathMatch: 'full' }, 
-    {path:'signup',component:SignupComponent},
-    {
-        path: 'courses',
-        children: [
-          {
-            path: '',
-            component: CourseHomeComponent,
-          },
-          {
-            path: 'details',
-            component: ViewModuleComponent,
-          },
-          {
-            path: 'payment',
-            component: CourseEnrollmentComponent,
-          },
-        //   {
-        //     path: 'combo',
-        //     component: CourseComboComponent,
-        //   },
-          {
-            path: 'quiz',
-            component: ViewQuizResultComponent,
-          },
-          {
-            path: 'task',
-            component: AssessmentSubmissionComponent,
-          },
-          {
-            path: 'status',
-            component: ViewAllCourseAssignmentStatusComponent,
-          },
-          {
-            path: 'ap-one',
-            component: PersonalInformationComponent,
-          },
-          {
-            path: 'ap-two',
-            component: StudentDeclarationComponent,
-          },
-        ],
+  { path: '', component: LoginComponent, pathMatch: 'full' },
+  { path: 'signup', component: SignupComponent },
+  {
+    path: 'courses',
+    children: [
+      {
+        path: '',
+        component: CourseHomeComponent,
       },
-    {path:'dashboard',component:ViewDashboardComponent},
-    {
-      path:'test',component:QuizViewAndSubmissionComponent
-    }
-    
+      {
+        path: 'details',
+        component: ViewModuleComponent,
+      },
+      {
+        path: 'payment',
+        component: CourseEnrollmentComponent,
+      },
+      //   {
+      //     path: 'combo',
+      //     component: CourseComboComponent,
+      //   },
+      {
+        path: 'quiz',
+        component: ViewQuizResultComponent,
+      },
+      {
+        path: 'task',
+        component: AssessmentSubmissionComponent,
+      },
+      {
+        path: 'status',
+        component: ViewAllCourseAssignmentStatusComponent,
+      },
+      {
+        path: 'ap-one',
+        component: PersonalInformationComponent,
+      },
+      {
+        path: 'ap-two',
+        component: StudentDeclarationComponent,
+      },
+    ],
+  },
+  { path: 'dashboard', component: ViewDashboardComponent },
+  {
+    path: 'test',
+    component: QuizViewAndSubmissionComponent,
+  },
+  {
+    path:'webinars',
+    component:ViewWebinarComponent
+  },
 ];
