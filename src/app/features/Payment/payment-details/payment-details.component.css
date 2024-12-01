@@ -1,0 +1,24 @@
+th {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #8C2036;
+
+}
+
+tbody {
+    padding: 10px;
+}
+
+tr {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #716E6E;
+}

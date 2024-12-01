@@ -13,6 +13,8 @@ import { AssessmentSubmissionComponent } from './features/course/assessment-task
 import { PersonalInformationComponent } from './features/course/student-admission-form/personal-information/personal-information.component';
 import { StudentDeclarationComponent } from './features/course/student-admission-form/student-declaration/student-declaration.component';
 import { ViewWebinarComponent } from './features/webinar/view-webinar/view-webinar.component';
+import { PaymentDetailsComponent } from './features/Payment/payment-details/payment-details.component';
+import { ReferFormSubmitComponent } from './features/Refer/refer-form-submit/refer-form-submit.component';
 
 export const routes: Routes = [
   { path: '', component: LoginComponent, pathMatch: 'full' },
@@ -67,4 +69,11 @@ export const routes: Routes = [
     path:'webinars',
     component:ViewWebinarComponent
   },
+  {
+    path:'payments',
+    component:PaymentDetailsComponent
+  },{
+    path:'refer',
+    component:ReferFormSubmitComponent
+  }
 ];

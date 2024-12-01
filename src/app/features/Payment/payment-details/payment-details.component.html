@@ -1,1 +1,477 @@
-<p>payment-details works!</p>
+<app-header></app-header>
+
+<div class="px-[10px]">
+    <div class="flex w-full mt-[120px]  gap-[5px]">
+        <div class="min-w-[240px]">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="min-w-[calc(100% - 280px)] w-full ml-1 rounded-xl mt-[8px] bg-[#ffff]">
+            <div class="header">
+                <div class="p-2 pl-4">
+                    <h1 class="text-[24px] font-light"><span class="font-poppins font-semibold">Payment</span> Details
+                    </h1>
+                </div>
+
+                <div class="p-2 pl-4 flex justify-between">
+                    <div class="flex items-center gap-2">
+                        <p class="border-2 border-solid h-6" style="border-color: #DE4A2C; border-radius: 50px;"></p>
+                        <p>Access your payment history and download invoices at your convenience.</p>
+                    </div>
+                    <button
+                        class="w-[176px] h-[42px] border border-solid border-[#E6E6E6] rounded-[50px] font-poppins font-semibold flex justify-center items-center gap-2">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.33268 1.33331H3.99935C3.64573 1.33331 3.30659 1.47379 3.05654 1.72384C2.80649 1.97389 2.66602 2.31302 2.66602 2.66665V13.3333C2.66602 13.6869 2.80649 14.0261 3.05654 14.2761C3.30659 14.5262 3.64573 14.6666 3.99935 14.6666H11.9993C12.353 14.6666 12.6921 14.5262 12.9422 14.2761C13.1922 14.0261 13.3327 13.6869 13.3327 13.3333V5.33331L9.33268 1.33331Z"
+                                stroke="#DE4A2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.33398 1.33331V5.33331H13.334" stroke="#DE4A2C" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6 10H10" stroke="#DE4A2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Download SOA
+                    </button>
+                </div>
+                <div class="border border-solid border-[#E6E6E6]"></div>
+            </div>
+            <div class="w-[98%%] mt-5 m-auto">
+                <table class="w-[98%] m-auto">
+                    <tr class="mb-5">
+                        <th>Invoice No#</th>
+                        <th>Date</th>
+                        <th>Course/Module</th>
+                        <th>Status</th>
+                        <th class="flex justify-center">Action</th>
+                    </tr>
+
+                    <tbody class="space-x-11">
+                        <tr class="whitespace-pre">
+                            <td>
+                                <p class=" border-l-2 border-solid border-t-2 border-b-2 rounded-l-full p-2">
+                                    154723</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">15/05/2024</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">Diploma in Digital Marketing (WUC
+                                    Level 8)</p>
+                            </td>
+                            <td>
+                                <div class="border-solid border-t-2 border-b-2 pr-3">
+                                    <p class="bg-[#DE4A2C] py-2 w-[60%] px-2 text-white">Cancelled</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="border-solid border-t-2 p-2 border-b-2 border-r-2 rounded-r-full pr-3 flex items-center gap-4 justify-center">
+                                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 8.2C5.32 -1.4 18.28 -1.4 22.6 8.2" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M11.7992 13C11.3265 13 10.8583 12.9069 10.4216 12.726C9.98479 12.545 9.58792 12.2799 9.25363 11.9456C8.91934 11.6113 8.65417 11.2144 8.47325 10.7776C8.29234 10.3409 8.19922 9.87275 8.19922 9.39999C8.19922 8.92723 8.29234 8.4591 8.47325 8.02233C8.65417 7.58556 8.91934 7.18869 9.25363 6.8544C9.58792 6.52011 9.98479 6.25494 10.4216 6.07402C10.8583 5.8931 11.3265 5.79999 11.7992 5.79999C12.754 5.79999 13.6697 6.17927 14.3448 6.8544C15.0199 7.52953 15.3992 8.44521 15.3992 9.39999C15.3992 10.3548 15.0199 11.2704 14.3448 11.9456C13.6697 12.6207 12.754 13 11.7992 13Z"
+                                            fill="black" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.6571 22C18.2062 22 22.7047 17.5228 22.7047 12C22.7047 6.47715 18.2062 2 12.6571 2C7.10787 2 2.60938 6.47715 2.60938 12C2.60938 17.5228 7.10787 22 12.6571 22Z"
+                                            stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.63867 12L12.6577 16L16.6768 12" stroke="#EE5025" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.6562 8V16" stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr class="pt-5">
+                            <td >
+                                <p class=" border-l-2 border-solid border-t-2 border-b-2 rounded-l-full p-2">
+                                    154723</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">15/05/2024</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">Diploma in Digital Marketing (WUC
+                                    Level 8)</p>
+                            </td>
+                            <td>
+                                <div class="border-solid border-t-2  border-b-2 pr-3">
+                                    <p class="bg-[#0F9015] py-2 w-[60%] px-2 text-white">Paid</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="border-solid border-t-2 p-2 border-b-2 border-r-2 rounded-r-full pr-3 flex items-center gap-4 justify-center">
+                                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 8.2C5.32 -1.4 18.28 -1.4 22.6 8.2" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M11.7992 13C11.3265 13 10.8583 12.9069 10.4216 12.726C9.98479 12.545 9.58792 12.2799 9.25363 11.9456C8.91934 11.6113 8.65417 11.2144 8.47325 10.7776C8.29234 10.3409 8.19922 9.87275 8.19922 9.39999C8.19922 8.92723 8.29234 8.4591 8.47325 8.02233C8.65417 7.58556 8.91934 7.18869 9.25363 6.8544C9.58792 6.52011 9.98479 6.25494 10.4216 6.07402C10.8583 5.8931 11.3265 5.79999 11.7992 5.79999C12.754 5.79999 13.6697 6.17927 14.3448 6.8544C15.0199 7.52953 15.3992 8.44521 15.3992 9.39999C15.3992 10.3548 15.0199 11.2704 14.3448 11.9456C13.6697 12.6207 12.754 13 11.7992 13Z"
+                                            fill="black" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.6571 22C18.2062 22 22.7047 17.5228 22.7047 12C22.7047 6.47715 18.2062 2 12.6571 2C7.10787 2 2.60938 6.47715 2.60938 12C2.60938 17.5228 7.10787 22 12.6571 22Z"
+                                            stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.63867 12L12.6577 16L16.6768 12" stroke="#EE5025" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.6562 8V16" stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+
+                        <tr class="pt-5">
+                            <td >
+                                <p class=" border-l-2 border-solid border-t-2 border-b-2 rounded-l-full p-2">
+                                    154723</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">15/05/2024</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">Diploma in Digital Marketing (WUC
+                                    Level 8)</p>
+                            </td>
+                            <td>
+                                <div class="border-solid border-t-2  border-b-2 pr-3">
+                                    <p class="bg-[#1C2745] py-2 w-[60%] px-2 text-white">Refunded</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="border-solid border-t-2 p-2 border-b-2 border-r-2 rounded-r-full pr-3 flex items-center gap-4 justify-center">
+                                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 8.2C5.32 -1.4 18.28 -1.4 22.6 8.2" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M11.7992 13C11.3265 13 10.8583 12.9069 10.4216 12.726C9.98479 12.545 9.58792 12.2799 9.25363 11.9456C8.91934 11.6113 8.65417 11.2144 8.47325 10.7776C8.29234 10.3409 8.19922 9.87275 8.19922 9.39999C8.19922 8.92723 8.29234 8.4591 8.47325 8.02233C8.65417 7.58556 8.91934 7.18869 9.25363 6.8544C9.58792 6.52011 9.98479 6.25494 10.4216 6.07402C10.8583 5.8931 11.3265 5.79999 11.7992 5.79999C12.754 5.79999 13.6697 6.17927 14.3448 6.8544C15.0199 7.52953 15.3992 8.44521 15.3992 9.39999C15.3992 10.3548 15.0199 11.2704 14.3448 11.9456C13.6697 12.6207 12.754 13 11.7992 13Z"
+                                            fill="black" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.6571 22C18.2062 22 22.7047 17.5228 22.7047 12C22.7047 6.47715 18.2062 2 12.6571 2C7.10787 2 2.60938 6.47715 2.60938 12C2.60938 17.5228 7.10787 22 12.6571 22Z"
+                                            stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.63867 12L12.6577 16L16.6768 12" stroke="#EE5025" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.6562 8V16" stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr class="whitespace-pre">
+                            <td>
+                                <p class=" border-l-2 border-solid border-t-2 border-b-2 rounded-l-full p-2">
+                                    154723</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">15/05/2024</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">Diploma in Digital Marketing (WUC
+                                    Level 8)</p>
+                            </td>
+                            <td>
+                                <div class="border-solid border-t-2 border-b-2 pr-3">
+                                    <p class="bg-[#DE4A2C] py-2 w-[60%] px-2 text-white">Cancelled</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="border-solid border-t-2 p-2 border-b-2 border-r-2 rounded-r-full pr-3 flex items-center gap-4 justify-center">
+                                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 8.2C5.32 -1.4 18.28 -1.4 22.6 8.2" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M11.7992 13C11.3265 13 10.8583 12.9069 10.4216 12.726C9.98479 12.545 9.58792 12.2799 9.25363 11.9456C8.91934 11.6113 8.65417 11.2144 8.47325 10.7776C8.29234 10.3409 8.19922 9.87275 8.19922 9.39999C8.19922 8.92723 8.29234 8.4591 8.47325 8.02233C8.65417 7.58556 8.91934 7.18869 9.25363 6.8544C9.58792 6.52011 9.98479 6.25494 10.4216 6.07402C10.8583 5.8931 11.3265 5.79999 11.7992 5.79999C12.754 5.79999 13.6697 6.17927 14.3448 6.8544C15.0199 7.52953 15.3992 8.44521 15.3992 9.39999C15.3992 10.3548 15.0199 11.2704 14.3448 11.9456C13.6697 12.6207 12.754 13 11.7992 13Z"
+                                            fill="black" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.6571 22C18.2062 22 22.7047 17.5228 22.7047 12C22.7047 6.47715 18.2062 2 12.6571 2C7.10787 2 2.60938 6.47715 2.60938 12C2.60938 17.5228 7.10787 22 12.6571 22Z"
+                                            stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.63867 12L12.6577 16L16.6768 12" stroke="#EE5025" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.6562 8V16" stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr class="pt-5">
+                            <td >
+                                <p class=" border-l-2 border-solid border-t-2 border-b-2 rounded-l-full p-2">
+                                    154723</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">15/05/2024</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">Diploma in Digital Marketing (WUC
+                                    Level 8)</p>
+                            </td>
+                            <td>
+                                <div class="border-solid border-t-2  border-b-2 pr-3">
+                                    <p class="bg-[#0F9015] py-2 w-[60%] px-2 text-white">Paid</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="border-solid border-t-2 p-2 border-b-2 border-r-2 rounded-r-full pr-3 flex items-center gap-4 justify-center">
+                                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 8.2C5.32 -1.4 18.28 -1.4 22.6 8.2" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M11.7992 13C11.3265 13 10.8583 12.9069 10.4216 12.726C9.98479 12.545 9.58792 12.2799 9.25363 11.9456C8.91934 11.6113 8.65417 11.2144 8.47325 10.7776C8.29234 10.3409 8.19922 9.87275 8.19922 9.39999C8.19922 8.92723 8.29234 8.4591 8.47325 8.02233C8.65417 7.58556 8.91934 7.18869 9.25363 6.8544C9.58792 6.52011 9.98479 6.25494 10.4216 6.07402C10.8583 5.8931 11.3265 5.79999 11.7992 5.79999C12.754 5.79999 13.6697 6.17927 14.3448 6.8544C15.0199 7.52953 15.3992 8.44521 15.3992 9.39999C15.3992 10.3548 15.0199 11.2704 14.3448 11.9456C13.6697 12.6207 12.754 13 11.7992 13Z"
+                                            fill="black" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.6571 22C18.2062 22 22.7047 17.5228 22.7047 12C22.7047 6.47715 18.2062 2 12.6571 2C7.10787 2 2.60938 6.47715 2.60938 12C2.60938 17.5228 7.10787 22 12.6571 22Z"
+                                            stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.63867 12L12.6577 16L16.6768 12" stroke="#EE5025" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.6562 8V16" stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+
+                        <tr class="pt-5">
+                            <td >
+                                <p class=" border-l-2 border-solid border-t-2 border-b-2 rounded-l-full p-2">
+                                    154723</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">15/05/2024</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">Diploma in Digital Marketing (WUC
+                                    Level 8)</p>
+                            </td>
+                            <td>
+                                <div class="border-solid border-t-2  border-b-2 pr-3">
+                                    <p class="bg-[#1C2745] py-2 w-[60%] px-2 text-white">Refunded</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="border-solid border-t-2 p-2 border-b-2 border-r-2 rounded-r-full pr-3 flex items-center gap-4 justify-center">
+                                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 8.2C5.32 -1.4 18.28 -1.4 22.6 8.2" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M11.7992 13C11.3265 13 10.8583 12.9069 10.4216 12.726C9.98479 12.545 9.58792 12.2799 9.25363 11.9456C8.91934 11.6113 8.65417 11.2144 8.47325 10.7776C8.29234 10.3409 8.19922 9.87275 8.19922 9.39999C8.19922 8.92723 8.29234 8.4591 8.47325 8.02233C8.65417 7.58556 8.91934 7.18869 9.25363 6.8544C9.58792 6.52011 9.98479 6.25494 10.4216 6.07402C10.8583 5.8931 11.3265 5.79999 11.7992 5.79999C12.754 5.79999 13.6697 6.17927 14.3448 6.8544C15.0199 7.52953 15.3992 8.44521 15.3992 9.39999C15.3992 10.3548 15.0199 11.2704 14.3448 11.9456C13.6697 12.6207 12.754 13 11.7992 13Z"
+                                            fill="black" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.6571 22C18.2062 22 22.7047 17.5228 22.7047 12C22.7047 6.47715 18.2062 2 12.6571 2C7.10787 2 2.60938 6.47715 2.60938 12C2.60938 17.5228 7.10787 22 12.6571 22Z"
+                                            stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.63867 12L12.6577 16L16.6768 12" stroke="#EE5025" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.6562 8V16" stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr class="whitespace-pre">
+                            <td>
+                                <p class=" border-l-2 border-solid border-t-2 border-b-2 rounded-l-full p-2">
+                                    154723</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">15/05/2024</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">Diploma in Digital Marketing (WUC
+                                    Level 8)</p>
+                            </td>
+                            <td>
+                                <div class="border-solid border-t-2 border-b-2 pr-3">
+                                    <p class="bg-[#DE4A2C] py-2 w-[60%] px-2 text-white">Cancelled</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="border-solid border-t-2 p-2 border-b-2 border-r-2 rounded-r-full pr-3 flex items-center gap-4 justify-center">
+                                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 8.2C5.32 -1.4 18.28 -1.4 22.6 8.2" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M11.7992 13C11.3265 13 10.8583 12.9069 10.4216 12.726C9.98479 12.545 9.58792 12.2799 9.25363 11.9456C8.91934 11.6113 8.65417 11.2144 8.47325 10.7776C8.29234 10.3409 8.19922 9.87275 8.19922 9.39999C8.19922 8.92723 8.29234 8.4591 8.47325 8.02233C8.65417 7.58556 8.91934 7.18869 9.25363 6.8544C9.58792 6.52011 9.98479 6.25494 10.4216 6.07402C10.8583 5.8931 11.3265 5.79999 11.7992 5.79999C12.754 5.79999 13.6697 6.17927 14.3448 6.8544C15.0199 7.52953 15.3992 8.44521 15.3992 9.39999C15.3992 10.3548 15.0199 11.2704 14.3448 11.9456C13.6697 12.6207 12.754 13 11.7992 13Z"
+                                            fill="black" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.6571 22C18.2062 22 22.7047 17.5228 22.7047 12C22.7047 6.47715 18.2062 2 12.6571 2C7.10787 2 2.60938 6.47715 2.60938 12C2.60938 17.5228 7.10787 22 12.6571 22Z"
+                                            stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.63867 12L12.6577 16L16.6768 12" stroke="#EE5025" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.6562 8V16" stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr class="pt-5">
+                            <td >
+                                <p class=" border-l-2 border-solid border-t-2 border-b-2 rounded-l-full p-2">
+                                    154723</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">15/05/2024</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">Diploma in Digital Marketing (WUC
+                                    Level 8)</p>
+                            </td>
+                            <td>
+                                <div class="border-solid border-t-2  border-b-2 pr-3">
+                                    <p class="bg-[#0F9015] py-2 w-[60%] px-2 text-white">Paid</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="border-solid border-t-2 p-2 border-b-2 border-r-2 rounded-r-full pr-3 flex items-center gap-4 justify-center">
+                                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 8.2C5.32 -1.4 18.28 -1.4 22.6 8.2" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M11.7992 13C11.3265 13 10.8583 12.9069 10.4216 12.726C9.98479 12.545 9.58792 12.2799 9.25363 11.9456C8.91934 11.6113 8.65417 11.2144 8.47325 10.7776C8.29234 10.3409 8.19922 9.87275 8.19922 9.39999C8.19922 8.92723 8.29234 8.4591 8.47325 8.02233C8.65417 7.58556 8.91934 7.18869 9.25363 6.8544C9.58792 6.52011 9.98479 6.25494 10.4216 6.07402C10.8583 5.8931 11.3265 5.79999 11.7992 5.79999C12.754 5.79999 13.6697 6.17927 14.3448 6.8544C15.0199 7.52953 15.3992 8.44521 15.3992 9.39999C15.3992 10.3548 15.0199 11.2704 14.3448 11.9456C13.6697 12.6207 12.754 13 11.7992 13Z"
+                                            fill="black" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.6571 22C18.2062 22 22.7047 17.5228 22.7047 12C22.7047 6.47715 18.2062 2 12.6571 2C7.10787 2 2.60938 6.47715 2.60938 12C2.60938 17.5228 7.10787 22 12.6571 22Z"
+                                            stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.63867 12L12.6577 16L16.6768 12" stroke="#EE5025" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.6562 8V16" stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+
+                        <tr class="pt-5">
+                            <td >
+                                <p class=" border-l-2 border-solid border-t-2 border-b-2 rounded-l-full p-2">
+                                    154723</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">15/05/2024</p>
+                            </td>
+                            <td>
+                                <p class="border-solid pl-2 border-t-2 p-2 border-b-2">Diploma in Digital Marketing (WUC
+                                    Level 8)</p>
+                            </td>
+                            <td>
+                                <div class="border-solid border-t-2  border-b-2 pr-3">
+                                    <p class="bg-[#1C2745] py-2 w-[60%] px-2 text-white">Refunded</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div
+                                    class="border-solid border-t-2 p-2 border-b-2 border-r-2 rounded-r-full pr-3 flex items-center gap-4 justify-center">
+                                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 8.2C5.32 -1.4 18.28 -1.4 22.6 8.2" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M11.7992 13C11.3265 13 10.8583 12.9069 10.4216 12.726C9.98479 12.545 9.58792 12.2799 9.25363 11.9456C8.91934 11.6113 8.65417 11.2144 8.47325 10.7776C8.29234 10.3409 8.19922 9.87275 8.19922 9.39999C8.19922 8.92723 8.29234 8.4591 8.47325 8.02233C8.65417 7.58556 8.91934 7.18869 9.25363 6.8544C9.58792 6.52011 9.98479 6.25494 10.4216 6.07402C10.8583 5.8931 11.3265 5.79999 11.7992 5.79999C12.754 5.79999 13.6697 6.17927 14.3448 6.8544C15.0199 7.52953 15.3992 8.44521 15.3992 9.39999C15.3992 10.3548 15.0199 11.2704 14.3448 11.9456C13.6697 12.6207 12.754 13 11.7992 13Z"
+                                            fill="black" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.6571 22C18.2062 22 22.7047 17.5228 22.7047 12C22.7047 6.47715 18.2062 2 12.6571 2C7.10787 2 2.60938 6.47715 2.60938 12C2.60938 17.5228 7.10787 22 12.6571 22Z"
+                                            stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.63867 12L12.6577 16L16.6768 12" stroke="#EE5025" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.6562 8V16" stroke="#EE5025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+            <div class=" w-full flex justify-center gap-4 items-center mb-4">
+                <button class=" w-[30px] rounded-[5px] text-white bg-[#1C2745]">1</button>
+                <button class=" w-[30px] rounded-[5px] bg-[#E6E6E6]">2</button>
+                <button class=" w-[30px] rounded-[5px] bg-[#E6E6E6]">3</button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
