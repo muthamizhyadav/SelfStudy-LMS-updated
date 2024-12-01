@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-professional-history',
+  selector: 'professional-history',
   standalone: true,
   imports: [],
   templateUrl: './professional-history.component.html',

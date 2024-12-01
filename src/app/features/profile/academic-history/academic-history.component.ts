@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-academic-history',
+  selector: 'academic-history',
   standalone: true,
   imports: [],
   templateUrl: './academic-history.component.html',

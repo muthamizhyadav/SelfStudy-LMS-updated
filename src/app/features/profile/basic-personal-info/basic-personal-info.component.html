@@ -1,3 +1,190 @@
-<form [formGroup]="basicDetForm" (ngSubmit)="onChangeBasicDetails()">
-    <p>basic-personal-info works!</p>
-</form>
+<div class="flex">
+    <div class="w-[60%]">
+        <h1 class="text-[18px] font-poppins p-8 flex flex-col relative">Basic Info
+            <span class="w-[40px] rounded-l-full rounded-r-full h-1 bg-[#DE4A2C]"></span>
+           
+        </h1>
+        <div class="flex gap-20 pl-8 m-auto">
+            <div>
+                <label for="first_name"
+                    class="block mb-2 text-sm font-medium text-gray-900 ">Full Name <span
+                        class="text-red-700 text-[20px] mt-2">*</span>
+                </label>
+                <input type="text" id="first_name"
+                    class="border-gray-300 border text-gray-900 text-sm rounded-lg   w-[310px] p-2.5   "
+                    placeholder="Alex Roy" required />
+            </div>
+            <div>
+                <label for="first_name"
+                    class="block mb-2 text-sm font-medium text-gray-900 ">Student ID <span
+                        class="text-red-700 text-[20px] mt-2">*</span></label>
+                <input type="text" id="first_name"
+                    class="border-gray-300 border text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  w-[310px] p-2.5    dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="567" required />
+            </div>
+        </div>
+        <div class="flex gap-20 pl-8 m-auto mt-12">
+            <div>
+                <label for="first_name"
+                    class="block mb-2 text-sm font-medium text-gray-900 ">Email <span
+                        class="text-red-700 text-[20px] mt-2">*</span>
+                </label>
+                <input type="text" id="first_name"
+                    class="border-gray-300 border text-gray-900 text-sm rounded-lg  w-[310px] p-2.5   "
+                    placeholder="Alex Roy" required />
+            </div>
+            <div>
+                <label for="first_name"
+                    class="block mb-2 text-sm font-medium text-gray-900 ">Phone <span
+                        class="text-red-700 text-[20px] mt-2">*</span></label>
+                <div class="relative">
+                    <div
+                        class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
+                            <path
+                                d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="phone-input" aria-describedby="helper-text-explanation"
+                        class=" border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[310px] ps-10 p-2.5     dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w-[40%] ml-16">
+        <h1 class="text-[18px] font-poppins p-8 flex flex-col relative">Profile Picture
+            <span class="w-[50px] rounded-l-full rounded-r-full h-1 bg-[#1C2745]"></span>
+            <div routerLink="/change-pass" class="absolute cursor-pointer gap-2 h-[40px] bg-[#DE4A2C] right-0 w-[140px] text-white rounded-ss-3xl rounded-es-3xl flex items-center justify-center">Setting <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.9934 11.5988V10.3933L20.4766 9.06954C20.75 8.82374 20.9294 8.48726 20.9831 8.11959C21.0368 7.75191 20.9614 7.37671 20.7701 7.06028L18.9471 3.9085C18.8116 3.66917 18.6168 3.47038 18.3822 3.33208C18.1477 3.19379 17.8816 3.12083 17.6106 3.12055C17.4427 3.11924 17.2757 3.14585 17.1162 3.19935L15.2391 3.84546C14.9154 3.62507 14.5773 3.42762 14.2271 3.2545L13.8332 1.26888C13.7625 0.906115 13.569 0.580249 13.2866 0.348327C13.0041 0.116404 12.6507 -0.00679696 12.2882 0.000289515H8.6729C8.31037 -0.00679696 7.95694 0.116404 7.67449 0.348327C7.39204 0.580249 7.19856 0.906115 7.12792 1.26888L6.73395 3.2545C6.38166 3.42836 6.04102 3.62578 5.71426 3.84546L3.87572 3.16783C3.7145 3.12498 3.54755 3.10902 3.38133 3.12055C3.1104 3.12083 2.8443 3.19379 2.60973 3.33208C2.37517 3.47038 2.18038 3.66917 2.04492 3.9085L0.221834 7.06028C0.0415243 7.37623 -0.0254781 7.7463 0.0323024 8.10711C0.090083 8.46792 0.269051 8.79701 0.538556 9.03802L1.99857 10.4012V11.6067L0.538556 12.9305C0.261439 13.1732 0.0775752 13.5081 0.0195944 13.876C-0.0383864 14.2438 0.0332654 14.6207 0.221834 14.9397L2.04492 18.0915C2.18038 18.3308 2.37517 18.5296 2.60973 18.6679C2.8443 18.8062 3.1104 18.8792 3.38133 18.8794C3.54923 18.8808 3.71622 18.8541 3.87572 18.8007L5.75288 18.1545C6.07654 18.3749 6.41466 18.5724 6.76485 18.7455L7.15882 20.7311C7.22946 21.0939 7.42294 21.4198 7.70539 21.6517C7.98784 21.8836 8.34127 22.0068 8.7038 21.9997H12.35C12.7125 22.0068 13.0659 21.8836 13.3484 21.6517C13.6308 21.4198 13.8243 21.0939 13.8949 20.7311L14.2889 18.7455C14.6412 18.5716 14.9818 18.3742 15.3086 18.1545L17.178 18.8007C17.3375 18.8541 17.5045 18.8808 17.6724 18.8794C17.9434 18.8792 18.2095 18.8062 18.444 18.6679C18.6786 18.5296 18.8734 18.3308 19.0089 18.0915L20.7701 14.9397C20.9504 14.6238 21.0174 14.2537 20.9597 13.8929C20.9019 13.5321 20.7229 13.203 20.4534 12.962L18.9934 11.5988ZM17.6106 17.3036L14.961 16.3895C14.3403 16.9249 13.6316 17.3437 12.8675 17.6266L12.3191 20.4553H8.6729L8.12443 17.6581C7.36642 17.3673 6.66145 16.9492 6.0387 16.4211L3.38133 17.3036L1.55825 14.1518L3.65943 12.2607C3.51659 11.4451 3.51659 10.6101 3.65943 9.79445L1.55825 7.84822L3.38133 4.69644L6.03098 5.61046C6.65162 5.07512 7.36041 4.65628 8.12443 4.37338L8.6729 1.54466H12.3191L12.8675 4.34187C13.6255 4.6327 14.3305 5.05083 14.9533 5.57894L17.6106 4.69644L19.4337 7.84822L17.3325 9.73929C17.4754 10.5549 17.4754 11.3899 17.3325 12.2056L19.4337 14.1518L17.6106 17.3036Z" fill="white"/>
+                <path d="M10.4999 15.9997C9.60989 15.9997 8.73989 15.7065 7.99988 15.1571C7.25988 14.6077 6.68312 13.8268 6.34254 12.9132C6.00195 11.9996 5.91284 10.9943 6.08647 10.0244C6.2601 9.05457 6.68867 8.16368 7.31799 7.46443C7.94731 6.76519 8.74911 6.28899 9.622 6.09607C10.4949 5.90315 11.3997 6.00217 12.2219 6.38059C13.0442 6.75902 13.7469 7.39987 14.2414 8.22209C14.7359 9.04432 14.9998 10.011 14.9998 10.9999C15.0058 11.6583 14.8935 12.3115 14.6695 12.9211C14.4455 13.5308 14.1143 14.0846 13.6952 14.5502C13.2761 15.0158 12.7777 15.3839 12.229 15.6328C11.6803 15.8817 11.0925 16.0064 10.4999 15.9997ZM10.4999 7.66663C10.1034 7.65636 9.70917 7.73557 9.34103 7.89945C8.97289 8.06332 8.63849 8.30847 8.35806 8.62006C8.07762 8.93165 7.85699 9.30321 7.7095 9.71225C7.56201 10.1213 7.49073 10.5593 7.49996 10.9999C7.49073 11.4404 7.56201 11.8784 7.7095 12.2875C7.85699 12.6965 8.07762 13.0681 8.35806 13.3797C8.63849 13.6913 8.97289 13.9364 9.34103 14.1003C9.70917 14.2642 10.1034 14.3434 10.4999 14.3331C10.8964 14.3434 11.2906 14.2642 11.6587 14.1003C12.0269 13.9364 12.3613 13.6913 12.6417 13.3797C12.9221 13.0681 13.1428 12.6965 13.2903 12.2875C13.4378 11.8784 13.509 11.4404 13.4998 10.9999C13.509 10.5593 13.4378 10.1213 13.2903 9.71225C13.1428 9.30321 12.9221 8.93165 12.6417 8.62006C12.3613 8.30847 12.0269 8.06332 11.6587 7.89945C11.2906 7.73557 10.8964 7.65636 10.4999 7.66663Z" fill="white"/>
+                </svg>
+                </div>
+        </h1>
+        <div class="flex justify-between gap-4">
+            <div class="w-[120px] ml-10 h-[120px] justify-center aspect-[16] rounded-[50%] bg-[#D9D9D9]">
+            </div>
+            <div class="flex flex-col mr-14">
+                <div class="flex items-center ml-4 bg-[#8C2036] rounded-full w-[150px] justify-center">
+                    <input id="file-upload" type="file" class="hidden" />
+                    <label for="file-upload"
+                        class="flex items-center gap-2 bg-[#8C2036]  text-white px-4 py-2 rounded-full cursor-pointer hover:bg-maroon-800">
+                        <span>Upload</span>
+                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.4286 16.8H0.571429C0.419876 16.8 0.274531 16.8632 0.167368 16.9757C0.060204 17.0883 0 17.2409 0 17.4C0 17.5591 0.060204 17.7117 0.167368 17.8243C0.274531 17.9368 0.419876 18 0.571429 18H15.4286C15.5801 18 15.7255 17.9368 15.8326 17.8243C15.9398 17.7117 16 17.5591 16 17.4C16 17.2409 15.9398 17.0883 15.8326 16.9757C15.7255 16.8632 15.5801 16.8 15.4286 16.8ZM2.74857 7.2L7.42857 2.298V14.688C7.42857 14.8471 7.48878 14.9997 7.59594 15.1123C7.7031 15.2248 7.84845 15.288 8 15.288C8.15155 15.288 8.2969 15.2248 8.40406 15.1123C8.51123 14.9997 8.57143 14.8471 8.57143 14.688V2.298L13.2514 7.2C13.3607 7.2983 13.5014 7.34966 13.6452 7.34383C13.789 7.33799 13.9254 7.27539 14.0272 7.16854C14.1289 7.06168 14.1886 6.91844 14.1941 6.76743C14.1997 6.61643 14.1508 6.46878 14.0571 6.354L8 0L1.93714 6.366C1.87466 6.41931 1.82361 6.48589 1.78734 6.56136C1.75107 6.63684 1.7304 6.71951 1.72668 6.80395C1.72297 6.8884 1.73629 6.97272 1.76577 7.05139C1.79526 7.13005 1.84024 7.20129 1.89778 7.26042C1.95531 7.31956 2.0241 7.36526 2.09963 7.39453C2.17516 7.42381 2.25573 7.43599 2.33606 7.43028C2.41639 7.42458 2.49466 7.40112 2.56575 7.36143C2.63684 7.32174 2.69914 7.26673 2.74857 7.2Z"
+                                fill="white" />
+                        </svg>
+
+                    </label>
+                </div>
+                <p class="w-[60%] pt-3 text-[#6D6D6D] text-center ">We support only JPEGs & PNGs under 5MB
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<h1 class="text-[18px] font-poppins p-8 flex flex-col relative">Personal Details
+    <span class="w-[40px] rounded-l-full rounded-r-full h-1 bg-[#8C2036]"></span>
+  
+</h1>
+<div class="flex gap-20 pl-8 m-auto">
+    <div>
+        <label for="dob" class="block mb-2 text-sm font-medium text-gray-900 ">Date of Birth
+            <span class="text-red-700 text-[20px] mt-2">*</span></label>
+        <input type="date" id="first_name"
+            class=" border border-gray-400 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[310px] p-2.5    dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="John" required />
+    </div>
+    <div>
+        <label for="dob" class="block mb-2 text-sm font-medium text-gray-900 ">Gender
+            <span class="text-red-700 text-[20px] mt-2">*</span></label>
+        <div class="flex gap-14 mt-4 ml-4">
+            <div class="flex items-center">
+                <input id="Male" type="radio" value="" name="default-radio"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600">
+                <label for="Male" class="ms-2 text-sm font-medium text-gray-900 ">
+                    Male</label>
+            </div>
+
+            <div class="flex items-center">
+                <input id="Female" type="radio" value="" name="default-radio"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600">
+                <label for="Female"
+                    class="ms-2 text-sm font-medium text-gray-900 ">Female</label>
+            </div>
+
+            <div class="flex items-center">
+                <input id="Other" type="radio" value="" name="default-radio"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600">
+                <label for="Other"
+                    class="ms-2 text-sm font-medium text-gray-900 ">Other</label>
+            </div>
+
+        </div>
+    </div>
+    <div class="">
+        <label for="LinkedIn " class="block mb-2 text-sm font-medium text-gray-900 ">LinkedIn
+        </label>
+        <input type="text" id="first_name"
+            class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[310px] p-2.5    dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="https://linkedin.com/alexroy" required />
+    </div>
+</div>
+
+<div class="flex gap-20 pl-8 m-auto pt-8">
+    <div>
+        <label for="Nationality*"
+            class="block mb-2 text-sm font-medium text-gray-900 ">Nationality
+            <span class="text-red-700 text-[20px] mt-2">*</span></label>
+        <input type="text" id="Nationality*"
+            class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[310px] p-2.5    dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Indian" required />
+    </div>
+
+    <div>
+        <label for="Country of Residence**"
+            class="block mb-2 text-sm font-medium text-gray-900 ">Country of Residence*
+            <span class="text-red-700 text-[20px] mt-2">*</span></label>
+        <select id="countries"
+            class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[310px] p-2.5    dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Choose a country</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <option value="FR">France</option>
+            <option value="DE">Germany</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="Name and phone number*"
+            class="block mb-2 text-sm font-medium text-gray-900 ">Emergency Contact
+            <span class="text-red-700 text-[20px] mt-2">*</span></label>
+        <input type="text" id="Name and phone number*"
+            class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[310px] p-2.5    dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Name and phone number" required />
+    </div>
+
+</div>
+
+<div class="flex gap-20 pl-8 m-auto pt-8">
+    <div>
+        <label for="PP/ID" class="block mb-2 text-sm font-medium text-gray-900 ">PP/ID Number
+            <span class="text-red-700 text-[20px] mt-2">*</span></label>
+        <input type="text" id="PP/ID"
+            class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[310px] p-2.5    dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Enter your passport or ID number" required />
+    </div>
+
+    <div>
+        <label for="ed" class="block mb-2 text-sm font-medium text-gray-900 ">Expiry Date
+            <span class="text-red-700 text-[20px] mt-2">*</span></label>
+        <input type="date" id="ed"
+            class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[310px] p-2.5    dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+    </div>
+</div>

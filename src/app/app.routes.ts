@@ -15,6 +15,11 @@ import { StudentDeclarationComponent } from './features/course/student-admission
 import { ViewWebinarComponent } from './features/webinar/view-webinar/view-webinar.component';
 import { PaymentDetailsComponent } from './features/Payment/payment-details/payment-details.component';
 import { ReferFormSubmitComponent } from './features/Refer/refer-form-submit/refer-form-submit.component';
+import { EarnedCertificatesComponent } from './features/certifications/earned-certificates/earned-certificates.component';
+import { UpcomingCertificatesComponent } from './features/certifications/upcoming-certificates/upcoming-certificates.component';
+import { FeedbackSubmitFormComponent } from './features/feedback/feedback-submit-form/feedback-submit-form.component';
+import { ProfileViewComponent } from './features/profile/profile-view/profile-view.component';
+import { ChangePasswordComponent } from './features/profile/change-password/change-password.component';
 
 export const routes: Routes = [
   { path: '', component: LoginComponent, pathMatch: 'full' },
@@ -75,5 +80,29 @@ export const routes: Routes = [
   },{
     path:'refer',
     component:ReferFormSubmitComponent
+  },{
+    path:'certifications',
+   
+    children:[
+      {
+        path:'',
+        component:EarnedCertificatesComponent,
+      },
+      {
+        path:'up',
+        component:UpcomingCertificatesComponent
+      }
+    ]
+  },{
+    path:'feedback',
+    component:FeedbackSubmitFormComponent
+  },
+  {
+    path:'profile',
+    component:ProfileViewComponent
+  },
+  {
+    path:'change-pass',
+    component:ChangePasswordComponent
   }
 ];
