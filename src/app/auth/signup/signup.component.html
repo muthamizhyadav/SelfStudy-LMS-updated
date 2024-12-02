@@ -331,11 +331,39 @@
         </div>
         <p class="absolute bottom-1 w-full text-white font-poppins text-center">© 2024 Westford Uni Online. All Rights Reserved</p>
     </div>
+
+
+    <div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50" *ngIf="showPopup2">
+        <div class="relative bg-white rounded-lg shadow-lg w-[557px] ">
+            <button class="absolute top-0 left-[104%] text-gray-400 hover:text-gray-600 focus:outline-none"
+                (click)="handleCancel2()" aria-label="Close">
+                <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 10L27 27M10 27L27 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <circle cx="18.5" cy="18.5" r="17.5" stroke="white" stroke-width="2" />
+                </svg>
+            </button>
+            <h2 class="font-bold mt-10 w-full bg-[#DE4A2C] text-white pl-10 text-[44px]">Attention</h2>
+            <div class="flex gap-4 items-center pl-10 mt-4">
+                <p class="w-1 h-5 rounded-t-full rounded-b-full bg-[#DE4A2C]"></p>
+                <p class="text-[24px]">Proceed Without LinkedIn Profile?</p>
+            </div>
+            <div class="pl-10 mt-4">
+                <p class="text-[#535353] text-[16px] pr-12">Including your LinkedIn profile URL helps us understand your professional background. If you don't have it ready now, you can add it later in your account settings.</p>
+            </div>
+
+            <div class="w-full flex justify-center mt-10 mb-10 gap-7">
+                <button class="px-5 py-3 border border-[#DE4A2C] rounded-full text-[#DE4A2C]">Yes, Proceed</button>
+                <button class="px-5 py-3 bg-[8C2036] rounded-full text-white bg-[#DE4A2C]">Return to Add LinkedIn</button>
+            </div>
+        </div>
+    </div>
+    
     <style>
         .round-checkbox {
    
     border-radius: 50%;
-    appearance: none; /* Removes the default checkbox styling */
+    appearance: none;
     
     cursor: pointer;
 }

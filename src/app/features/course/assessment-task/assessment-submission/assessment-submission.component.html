@@ -68,12 +68,12 @@
               id=""
             ></textarea>
             <div class="w-full flex gap-4 items-end justify-end">
-              <button
+              <button (click)="openPopup2()"
                 class="h-[40px] text-[14px] border border-gray-400 justify-center w-[120px] flex items-center gap-1 text-black mt-[10px] rounded-[25px]"
               >
                 Save Draft
               </button>
-              <button
+              <button (click)="openPopup()"
                 class="h-[40px] text-[14px] border bg-[var(--ma)] border-gray-400 justify-center w-[120px] flex items-center gap-1 text-white mt-[10px] rounded-[25px]"
               >
                 Submit
@@ -87,4 +87,59 @@
     </div>
   </div>
 </div>
+
+<div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50" *ngIf="showPopup2">
+  <div class="relative bg-white rounded-lg shadow-lg w-[557px] ">
+      <button class="absolute top-0 left-[104%] text-gray-400 hover:text-gray-600 focus:outline-none"
+          (click)="handleCancel2()" aria-label="Close">
+          <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 10L27 27M10 27L27 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              <circle cx="18.5" cy="18.5" r="17.5" stroke="white" stroke-width="2" />
+          </svg>
+      </button>
+      <h2 class="font-bold mt-10 w-full bg-[#DE4A2C] text-white pl-10 text-[44px]">Attention</h2>
+      <div class="flex gap-4 items-center pl-10 mt-4">
+          <p class="w-1 h-5 rounded-t-full rounded-b-full bg-[#DE4A2C]"></p>
+          <p class="text-[24px]">Draft saved successfully</p>
+      </div>
+      <div class="pl-10 mt-4">
+          <p class="text-[#535353] text-[16px] pr-12">Please ensure to complete this assessment before the final submission for review. You can revisit previous videos but cannot proceed further until the assessment is completed.</p>
+      </div>
+
+      <div class="w-full flex justify-center mt-10 mb-10 gap-7">
+          <button class="px-5 py-3 border border-[#DE4A2C] rounded-full text-[#DE4A2C]">Review Previous Videos</button>
+          <button class="px-5 py-3 rounded-full text-white bg-[#DE4A2C]">Return to Assessment</button>
+      </div>
+
+  </div>
+</div>
+
+<div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50" *ngIf="showPopup">
+  <div class="relative bg-white rounded-lg shadow-lg w-[557px] ">
+      <button class="absolute top-0 left-[104%] text-gray-400 hover:text-gray-600 focus:outline-none"
+          (click)="handleCancel()" aria-label="Close">
+          <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 10L27 27M10 27L27 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              <circle cx="18.5" cy="18.5" r="17.5" stroke="white" stroke-width="2" />
+          </svg>
+      </button>
+      <h2 class="font-bold mt-10 w-full bg-[#1C2745] text-white pl-10 text-[44px]">Heads-Up</h2>
+      <div class="flex gap-4 items-center pl-10 mt-4">
+          <p class="w-1 h-5 rounded-t-full rounded-b-full bg-[#1C2745]"></p>
+          <p class="text-[24px]">Confirm Submission</p>
+      </div>
+      <div class="pl-10 mt-4">
+          <p class="text-[#535353] text-[16px] pr-12">You are about to submit your Assessment. Please review your answers before submitting, as you won't be able to make changes afterward.</p>
+      </div>
+
+      <div class="w-full flex justify-center mt-10 mb-10 gap-7">
+          <button class="px-5 py-3 border border-[#1C2745] rounded-full text-[#1C2745]">Yes, Submit</button>
+          <button class="px-5 py-3 rounded-full text-white bg-[#1C2745]">No, Review Answers</button>
+      </div>
+
+  </div>
+</div>
+
 <app-footer></app-footer>

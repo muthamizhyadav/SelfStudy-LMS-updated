@@ -17,4 +17,21 @@ export class SignupComponent {
   hide() {
     this.passowrdShow = !this.passowrdShow
   }
+
+  showPopup2 = false;
+
+  handleConfirm2() {
+    console.log('Confirmed!');
+    this.showPopup2 = false;
+  }
+
+  handleCancel2() {
+    console.log('Cancelled!');
+    this.showPopup2 = false;
+  }
+
+  openPopup2() {
+    this.showPopup2 = true
+  }
+
 }

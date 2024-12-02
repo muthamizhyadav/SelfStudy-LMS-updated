@@ -23,7 +23,8 @@
                     <div
                         class="w-[90%] m-auto ml-5 font-poppins mt-4 text-[16px] text-[#535353] flex items-start gap-2 pb-5">
                         <div class="w-[10px] h-[10px] rounded-full bg-[#8C2036] mt-2"></div>
-                        <p class="text-[16px] w-[90%]">Learn the latest trends and techniques in digital marketing to boost your
+                        <p class="text-[16px] w-[90%]">Learn the latest trends and techniques in digital marketing to
+                            boost your
                             online presence.</p>
                     </div>
                     <div class="w-full h-[2px] mb-4 bg-[#E6E6E6]">
@@ -52,7 +53,7 @@
                     </div>
 
                     <div class="flex justify-center mb-4">
-                        <button type="button"
+                        <button type="button" (click)="handlePopupShow()"
                             class="bg-[#1C2745] rounded-full flex h-[44px] w-[184px] text-[white] gap-4 items-center justify-center font-poppins">
                             Register
                             <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
@@ -64,7 +65,7 @@
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="bg-white shadow rounded-[15px] h-auto w-[300px] md:w-[calc(25%-0.5rem)]  mx-1 font-poppins">
                     <div class="head flex items-center p-4 max-h-[48px] h-[48px] mt-7 mb-5 justify-center">
                         <p class="w-[4px] rounded-t-3xl rounded-b-3xl h-5 bg-[#8C2036]">
@@ -80,7 +81,8 @@
                     <div
                         class="w-[90%] m-auto ml-5 font-poppins mt-4 text-[16px] text-[#535353] flex items-start gap-2 pb-5">
                         <div class="w-[10px] h-[10px] rounded-full bg-[#8C2036] mt-2"></div>
-                        <p class="text-[16px] w-[90%]">Learn the latest trends and techniques in digital marketing to boost your
+                        <p class="text-[16px] w-[90%]">Learn the latest trends and techniques in digital marketing to
+                            boost your
                             online presence.</p>
                     </div>
                     <div class="w-full h-[2px] mb-4 bg-[#E6E6E6]">
@@ -109,7 +111,7 @@
                     </div>
 
                     <div class="flex justify-center mb-4">
-                        <button type="button"
+                        <button type="button" (click)="handlePopupShow()"
                             class="bg-[#1C2745] rounded-full flex h-[44px] w-[184px] text-[white] gap-4 items-center justify-center font-poppins">
                             Register
                             <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
@@ -136,7 +138,8 @@
                     <div
                         class="w-[90%] m-auto ml-5 font-poppins mt-4 text-[16px] text-[#535353] flex items-start gap-2 pb-5">
                         <div class="w-[10px] h-[10px] rounded-full bg-[#8C2036] mt-2"></div>
-                        <p class="text-[16px] w-[90%]">Learn the latest trends and techniques in digital marketing to boost your
+                        <p class="text-[16px] w-[90%]">Learn the latest trends and techniques in digital marketing to
+                            boost your
                             online presence.</p>
                     </div>
                     <div class="w-full h-[2px] mb-4 bg-[#E6E6E6]">
@@ -165,7 +168,7 @@
                     </div>
 
                     <div class="flex justify-center mb-4">
-                        <button type="button"
+                        <button type="button" (click)="handlePopupShow()"
                             class="bg-[#1C2745] rounded-full flex h-[44px] w-[184px] text-[white] gap-4 items-center justify-center font-poppins">
                             Register
                             <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
@@ -192,7 +195,8 @@
                     <div
                         class="w-[90%] m-auto ml-5 font-poppins mt-4 text-[16px] text-[#535353] flex items-start gap-2 pb-5">
                         <div class="w-[10px] h-[10px] rounded-full bg-[#8C2036] mt-2"></div>
-                        <p class="text-[16px w-[90%]">Learn the latest trends and techniques in digital marketing to boost your
+                        <p class="text-[16px w-[90%]">Learn the latest trends and techniques in digital marketing to
+                            boost your
                             online presence.</p>
                     </div>
                     <div class="w-full h-[2px] mb-4 bg-[#E6E6E6]">
@@ -221,7 +225,7 @@
                     </div>
 
                     <div class="flex justify-center mb-4">
-                        <button type="button"
+                        <button type="button" (click)="handlePopupShow()"
                             class="bg-[#1C2745] rounded-full flex h-[44px] w-[184px] text-[white] gap-4 items-center justify-center font-poppins">
                             Register
                             <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
@@ -236,9 +240,111 @@
             </div>
         </div>
     </div>
+
+    <div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50" *ngIf="showPopup">
+        <div class="relative bg-white rounded-lg shadow-lg w-[557px] ">
+            <button class="absolute top-0 left-[104%] text-gray-400 hover:text-gray-600 focus:outline-none"
+                (click)="handleCancel()" aria-label="Close">
+                <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 10L27 27M10 27L27 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <circle cx="18.5" cy="18.5" r="17.5" stroke="white" stroke-width="2" />
+                </svg>
+            </button>
+            <h2 class="font-bold mt-10 w-full bg-[#1C2745] text-white pl-10 text-[44px]">Register</h2>
+            <div class="flex gap-4 items-center pl-10 mt-2">
+                <p class="w-1 h-5 rounded-t-full rounded-b-full bg-[#8C2036]"></p>
+                <p class="text-[24px]">for Our Upcoming Webinar</p>
+            </div>
+
+            <div class="w-[80%] mt-5 m-auto">
+                <label for="" class="text-[18px] font-semibold"> First Name <span class="text-red-700">*</span></label>
+                <input type="text" id="first_name"
+                    class="bg-gray-50 border-b mt-1 border-gray-300 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                    placeholder="Enter your First Name" />
+            </div>
+
+            <div class="w-[80%] mt-5 m-auto">
+                <label for="" class="text-[18px] font-semibold"> Last Name <span class="text-red-700">*</span></label>
+                <input type="text" id="first_name"
+                    class="bg-gray-50 border-b mt-1 border-gray-300 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                    placeholder="Enter yourLast Name" />
+            </div>
+
+            <div class="w-[80%] mt-5 m-auto">
+                <label for="" class="text-[18px] font-semibold"> Email <span class="text-red-700">*</span></label>
+                <input type="email" id="first_name"
+                    class="bg-gray-50 border-b mt-1 border-gray-300 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                    placeholder="Enter your Email" />
+            </div>
+
+            <div class="w-[80%] mt-5 m-auto">
+                <label for="" class="text-[18px] font-semibold"> Phone <span class="text-red-700">*</span></label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
+                            <path
+                                d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="phone-input" aria-describedby="helper-text-explanation"
+                        class="bg-gray-50 border-b border-gray-300 text-gray-900 text-sm rounded-lg  block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required />
+                </div>
+            </div>
+
+
+            <div class="w-[80%] mt-5 m-auto">
+                <label for="" class="text-[18px] font-semibold">Get the Certificate<span
+                        class="text-red-700">*</span></label>
+                <div class="flex items-center gap-4 font-poppins mt-3">
+                    <div class="flex items-center">
+                        <input id="default-radio-1" type="radio" value="" name="default-radio"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="default-radio-1"
+                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input id="default-radio-2" type="radio" value="" name="default-radio"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="default-radio-2"
+                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gaap-4 w-[80%] m-auto mt-5">
+                <input id="default-checkbox" type="checkbox" value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree
+                    to subscribe to the Westford Newsletter</label>
+            </div>
+
+            <div class="flex gaap-4 w-[80%] m-auto mt-5">
+                <input id="default-checkbox" type="checkbox" value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox"
+                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 w-[87%]">I agree to receive
+                    promotional emails from Westford Uni Online</label>
+            </div>
+
+            <div class="w-full flex items-center justify-center mt-10 mb-10 gap-7">
+                <button
+                    class="px-8 py-3 border flex gap-4 items-center text-white border-[#8C2036] rounded-full bg-[#8C2036]">
+                    <p>Submit Registration</p>
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.76383 8.49844L1.27781 15.8099C1.13622 15.9319 0.948103 16 0.752481 16C0.556858 16 0.368743 15.9319 0.22715 15.8099L0.218013 15.8016C0.149133 15.7424 0.094286 15.6712 0.0568066 15.5923C0.0193272 15.5133 0 15.4283 0 15.3424C0 15.2565 0.0193272 15.1715 0.0568066 15.0925C0.094286 15.0136 0.149133 14.9424 0.218013 14.8832L8.20915 7.99862L0.218013 1.11681C0.149133 1.05764 0.094286 0.986415 0.0568066 0.907473C0.0193272 0.82853 0 0.743518 0 0.657608C0 0.571698 0.0193272 0.486687 0.0568066 0.407743C0.094286 0.328801 0.149133 0.257578 0.218013 0.198408L0.22715 0.190145C0.368743 0.0680895 0.556858 0 0.752481 0C0.948103 0 1.13622 0.0680895 1.27781 0.190145L9.76383 7.50156C9.83846 7.56586 9.89787 7.64319 9.93847 7.72887C9.97907 7.81455 10 7.90679 10 8C10 8.09321 9.97907 8.18545 9.93847 8.27113C9.89787 8.35681 9.83846 8.43415 9.76383 8.49844Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
-    <app-footer></app-footer>
-    <!-- md:w-[calc(25%-0.5rem)]
+<app-footer></app-footer>
+<!-- md:w-[calc(25%-0.5rem)]
 md:w-[calc(25%-0.5rem)]
 md:w-[calc(25%-0.5rem)]
 md:w-[calc(25%-0.5rem)] -->

@@ -14,7 +14,7 @@
                     <div
                         class="head flex p-2 text-[20px] pl-8 text-white items-center m-3 justify-between gap-3 w-full bg-[#535352]">
                         Friend’s Details
-                        <svg width="21" height="23" class="mr-5" viewBox="0 0 21 23" fill="none"
+                        <svg width="21" height="23" class="mr-5" viewBox="0 0 21 23" fill="none" (click)="openPopup2()"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M14.9924 0.53543C15.6404 0.161532 16.3802 -0.0231633 17.1279 0.00232241C17.8756 0.0278081 18.6011 0.262453 19.2221 0.679606C19.8431 1.09676 20.3347 1.6797 20.641 2.36222C20.9473 3.04474 21.056 3.79947 20.9549 4.54071C20.8538 5.28194 20.5468 5.97996 20.0689 6.55548C19.591 7.13101 18.9612 7.56097 18.2512 7.79653C17.5411 8.03209 16.7792 8.06381 16.0521 7.88808C15.3249 7.71236 14.6616 7.33623 14.1374 6.80243L7.85745 10.4284C7.95545 10.7838 8.00378 11.1411 8.00245 11.5004C8.00245 11.8584 7.95545 12.2194 7.85745 12.5724L14.1374 16.1984C14.8203 15.5059 15.732 15.0858 16.702 15.0166C17.6721 14.9473 18.6342 15.2337 19.4085 15.8221C20.1828 16.4106 20.7164 17.2608 20.9094 18.214C21.1024 19.1672 20.9418 20.1581 20.4574 21.0014C19.9715 21.8462 19.1939 22.4846 18.2706 22.7965C17.3473 23.1085 16.3418 23.0727 15.4431 22.6957C14.5443 22.3188 13.8141 21.6267 13.3896 20.7495C12.965 19.8722 12.8754 18.8701 13.1374 17.9314L6.85745 14.3044C6.3007 14.8714 5.58777 15.2598 4.80949 15.4201C4.03122 15.5805 3.22283 15.5055 2.48732 15.2047C1.75182 14.904 1.12249 14.3911 0.67952 13.7314C0.236553 13.0717 0 12.295 0 11.5004C0 10.7058 0.236553 9.92918 0.67952 9.26948C1.12249 8.60979 1.75182 8.09689 2.48732 7.79614C3.22283 7.49539 4.03122 7.42041 4.80949 7.58074C5.58777 7.74107 6.3007 8.12947 6.85745 8.69643L13.1374 5.07043C12.9001 4.21583 12.9535 3.30659 13.2893 2.48567C13.6251 1.66474 14.2242 0.978707 14.9924 0.53543ZM18.7244 3.00043C18.5941 2.77114 18.4197 2.5699 18.2112 2.4083C18.0027 2.24669 17.7644 2.12792 17.5098 2.05881C17.2553 1.9897 16.9896 1.97163 16.728 2.00562C16.4665 2.03962 16.2142 2.12502 15.9858 2.2569C15.7574 2.38879 15.5573 2.56455 15.3971 2.77407C15.2369 2.98359 15.1197 3.22274 15.0523 3.47774C14.9848 3.73274 14.9685 3.99855 15.0043 4.25988C15.04 4.52121 15.1271 4.77289 15.2604 5.00043C15.5276 5.45604 15.964 5.78751 16.4746 5.92251C16.9852 6.0575 17.5285 5.98505 17.9858 5.72098C18.4432 5.45691 18.7776 5.02264 18.9159 4.51296C19.0543 4.00327 18.9855 3.45955 18.7244 3.00043ZM2.07245 12.0274C2.15351 12.3223 2.30107 12.5948 2.5038 12.8238C2.70652 13.0528 2.95903 13.2323 3.24193 13.3486C3.52483 13.4648 3.83061 13.5147 4.13579 13.4944C4.44097 13.4741 4.73744 13.3841 5.00245 13.2314C5.32598 13.0444 5.59065 12.7705 5.76646 12.4408C5.94226 12.111 6.02217 11.7386 5.99711 11.3658C5.97206 10.9929 5.84305 10.6345 5.6247 10.3313C5.40636 10.028 5.10742 9.79199 4.76178 9.64996C4.41613 9.50793 4.03761 9.46557 3.66912 9.52769C3.30063 9.58982 2.95692 9.75393 2.67695 10.0014C2.39698 10.2489 2.19195 10.5699 2.0851 10.928C1.97826 11.2861 1.97388 11.667 2.07245 12.0274ZM17.9924 17.2694C17.7649 17.136 17.5132 17.049 17.2519 17.0132C16.9906 16.9775 16.7248 16.9938 16.4698 17.0612C16.2148 17.1287 15.9756 17.2458 15.7661 17.4061C15.5566 17.5663 15.3808 17.7664 15.2489 17.9948C15.117 18.2232 15.0316 18.4754 14.9976 18.737C14.9636 18.9986 14.9817 19.2643 15.0508 19.5188C15.1199 19.7734 15.2387 20.0117 15.4003 20.2202C15.5619 20.4286 15.7632 20.6031 15.9924 20.7334C16.4516 20.9945 16.9953 21.0633 17.505 20.9249C18.0147 20.7866 18.4489 20.4522 18.713 19.9948C18.9771 19.5374 19.0495 18.9942 18.9145 18.4836C18.7795 17.973 18.4481 17.5365 17.9924 17.2694Z"
@@ -129,7 +129,8 @@
                                 class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600">
                             <label for="default-checkbox"
                                 class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> I agree to the <span
-                                    class="text-[#8C2036] underline">Terms and Conditions.</span> </label>
+                                    class="text-[#8C2036] underline" (click)="openPopup()">Terms and Conditions.</span>
+                            </label>
                         </div>
 
                         <div class="w-full flex justify-center items-center mb-5">
@@ -149,5 +150,198 @@
             </div>
         </div>
     </div>
+
+    <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center z-50" *ngIf="showPopup">
+        <button class="absolute top-12 left-[75%] text-red-900 focus:outline-none" (click)="handleCancel()"
+            aria-label="Close">
+            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 10L27 27M10 27L27 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <circle cx="18.5" cy="18.5" r="17.5" stroke="white" stroke-width="2" />
+            </svg>
+        </button>
+        <div class="relative bg-white rounded-lg shadow-lg w-[50%] ml-[24%] overflow-auto max-h-[90%]">
+            <h2 class="mt-10 w-full bg-[#1C2745] text-white pl-10 text-[44px]">Terms & Conditions</h2>
+            <div class="flex gap-3 items-center pl-10 mt-4">
+                <p class="w-1 h-5 rounded-t-full rounded-b-full bg-[#DE4A2C]"></p>
+                <p class="text-[24px] w-[40%]">Introduction</p>
+            </div>
+            <div class="pl-16 mt-2 flex items-center gap-2 text-[#535353]">
+                Welcome to Westford University College's Online Learning Platform. By signing up and accessing our
+                platform, you agree to abide by the following terms and conditions.
+            </div>
+
+            <div class="flex gap-3 items-center pl-10 mt-4">
+                <p class="w-1 h-5 rounded-t-full rounded-b-full bg-[#535352]"></p>
+                <p class="text-[24px] w-[40%]">User Account</p>
+            </div>
+
+            <div class=" mt-2 w-full flex flex-col items-center text-[#535353]">
+                <div class="ml-[-80px] flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] bg-[#8C2036]"></p>
+                    <p>You must provide accurate and complete information during the registration process.</p>
+                </div>
+            </div>
+
+            <div class=" mt-2 flex flex-col items-center gap-2 text-[#535353]">
+                <div class="ml-[-80px] flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] bg-[#8C2036]"></p>
+                    <p>You must provide accurate and complete information during the registration process.</p>
+                </div>
+            </div>
+
+            <div class=" mt-2 flex flex-col items-center gap-2 text-[#535353]">
+                <div class="ml-[-80px] flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] bg-[#8C2036]"></p>
+                    <p>You must provide accurate and complete information during the registration process.</p>
+                </div>
+            </div>
+
+
+            <div class="flex gap-3 items-center pl-10 mt-4">
+                <p class="w-1 h-5 rounded-t-full rounded-b-full bg-[#1C2745]"></p>
+                <p class="text-[24px] w-[40%]">Use of Platform</p>
+            </div>
+
+            <div class=" mt-2 w-full flex flex-col items-center text-[#535353]">
+                <div class="ml-[-80px] flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] bg-[#8C2036]"></p>
+                    <p>You must provide accurate and complete information during the registration process.</p>
+                </div>
+            </div>
+
+            <div class=" mt-2 flex flex-col items-center gap-2 text-[#535353]">
+                <div class="ml-[-80px] flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] bg-[#8C2036]"></p>
+                    <p>You must provide accurate and complete information during the registration process.</p>
+                </div>
+            </div>
+
+            <div class=" mt-2 flex flex-col items-center gap-2 text-[#535353]">
+                <div class="ml-[-80px] flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] bg-[#8C2036]"></p>
+                    <p>You must provide accurate and complete information during the registration process.</p>
+                </div>
+            </div>
+
+
+            <div class="flex gap-3 items-center pl-10 mt-4">
+                <p class="w-1 h-5 rounded-t-full rounded-b-full bg-[#1C2745]"></p>
+                <p class="text-[24px] w-[40%]">Course Content</p>
+            </div>
+
+            <div class=" mt-2 w-full flex flex-col items-center text-[#535353]">
+                <div class="ml-16 flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] mt-[-29px] bg-[#8C2036]"></p>
+                    <p class="w-[90%] text-wrap whitespace-nowrap ">All course materials are the intellectual property of Westford University College and are protected by copyright laws.</p>
+                </div>
+            </div>
+            <div class=" mt-2 w-full flex flex-col items-center text-[#535353]">
+                <div class="ml-16 flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] mt-[-29px] bg-[#8C2036]"></p>
+                    <p class="w-[90%] text-wrap whitespace-nowrap ">You are granted a limited, non-exclusive license to access and use the course materials for your personal educational use.</p>
+                </div>
+            </div>
+
+
+
+            <div class="flex gap-3 items-center pl-10 mt-4">
+                <p class="w-1 h-5 rounded-t-full rounded-b-full bg-[#535352]"></p>
+                <p class="text-[24px] w-[40%]">Payments and Refunds</p>
+            </div>
+
+            <div class=" mt-2 w-full flex flex-col items-center text-[#535353]">
+                <div class="ml-[-150px] flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] bg-[#8C2036]"></p>
+                    <p>Payment for courses must be made through the provided payment methods.</p>
+                </div>
+            </div>
+
+         
+            <div class=" mt-2 w-full flex flex-col items-center text-[#535353]">
+                <div class="ml-[-240px] flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] bg-[#8C2036]"></p>
+                    <p>Refunds are subject to our refund policy, which can be found <span class="underline text-blue-800 cursor-pointer">here.</span></p>
+                </div>
+            </div>
+
+        
+            <div class="flex gap-3 items-center pl-10 mt-4">
+                <p class="w-1 h-5 rounded-t-full rounded-b-full bg-[#232725]"></p>
+                <p class="text-[24px] w-[40%]">Certificates</p>
+            </div>
+
+            <div class=" mt-2 w-full flex flex-col items-center text-[#535353]">
+                <div class="flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] bg-[#8C2036]"></p>
+                    <p>Certificates will be issued upon successful completion of courses and meeting all requirements.</p>
+                </div>
+            </div>
+
+         
+            <div class=" mt-2 w-full flex flex-col items-center text-[#535353]">
+                <div class="ml-[-150px] flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] bg-[#8C2036]"></p>
+                    <p>The issuance of certificates is at the discretion of Westford University College.</p>
+                </div>
+            </div>
+
+
+            <div class="flex gap-3 items-center pl-10 mt-4">
+                <p class="w-1 h-5 rounded-t-full rounded-b-full bg-[#DE4A2C]"></p>
+                <p class="text-[24px] w-[40%]">Termination</p>
+            </div>
+
+            <div class=" mt-2 w-full flex flex-col items-center text-[#535353]">
+                <div class="ml-16 flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] mt-[-29px] bg-[#8C2036]"></p>
+                    <p class="w-[90%] text-wrap whitespace-nowrap ">We reserve the right to terminate or suspend your account for any violation of these terms and conditions.</p>
+                </div>
+            </div>
+         
+            <div class="flex gap-3 items-center pl-10 mt-4">
+                <p class="w-1 h-5 rounded-t-full rounded-b-full bg-[#DE4A2C]"></p>
+                <p class="text-[24px] w-[40%]">Changes to Terms</p>
+            </div>
+
+            <div class=" mt-2 w-full flex flex-col items-center text-[#1C2745] mb-10">
+                <div class="ml-16 flex gap-2 items-center">
+                    <p class="w-[10px] h-[10px] rounded-[50%] mt-[-29px] bg-[#8C2036]"></p>
+                    <p class="w-[90%] text-wrap whitespace-nowrap ">Westford University College reserves the right to update or modify these terms and conditions at any time without prior notice. Changes will be effective upon posting on the platform.</p>
+                </div>
+            </div>
+         
+
+        </div>
+    </div>
+
+
+    <div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50" *ngIf="showPopup2">
+        <div class="relative bg-white rounded-lg shadow-lg w-[557px] ">
+            <button class="absolute top-0 left-[104%] text-gray-400 hover:text-gray-600 focus:outline-none"
+                (click)="handleCancel2()" aria-label="Close">
+                <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 10L27 27M10 27L27 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <circle cx="18.5" cy="18.5" r="17.5" stroke="white" stroke-width="2" />
+                </svg>
+            </button>
+            <h2 class="font-bold mt-10 w-full bg-[#1C2745] text-white pl-10 text-[44px]">Confirmation</h2>
+            <div class="flex gap-4 items-center pl-10 mt-4">
+                <p class="w-1 h-5 rounded-t-full rounded-b-full bg-[#1C2745]"></p>
+                <p class="text-[24px]">Referral Code Copied</p>
+            </div>
+            <div class="pl-10 mt-4">
+                <p class="text-[#535353] text-[16px] pr-12">Are you sure you want to cancel the password change? Any unsaved modifications will be lost.</p>
+            </div>
+
+            <div class="w-full flex justify-center mt-10 mb-10 gap-7">
+                <button class="px-5 py-3 bg-[8C2036] rounded-full text-white bg-[#1C2745]">Got it!</button>
+            </div>
+
+        </div>
+    </div>
+
+
 </div>
 <app-footer></app-footer>
