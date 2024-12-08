@@ -41,11 +41,13 @@
     background-color: var(--ma);
 }
 .side-details{
-    position: absolute;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  align-items: end;
     .usd{
         background-color: var(--dgr);
         border-radius: 15px 0 0px 15px;
