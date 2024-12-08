@@ -1,0 +1,184 @@
+<div class="w-full h-[100vh] bg-[#DDDDDC] content-center">
+    <div class="w-[98%] h-[95%] bg-[#FFFFFF] m-auto rounded-[8px] overflow-auto">
+        <div class="ml-[15%]">
+            <h1 class="font-roboto text-[32px] pt-8 font-semibold text-[#535352]">
+                Welcome <span class="text-[#8C2036]">to </span>
+                <span class="text-[#DE4A2C]">Westford </span>
+                <span class="text-[#1C2745]">University!</span>
+            </h1>
+        </div>
+        <div class="w-full h-[44px] bg-[#1C2745] mt-8">
+            <p class="content-center ml-[15%] h-full text-white text-[20px] font-roboto">
+                You've been referred by <span class="font-bold">Alex Roy</span>
+            </p>
+        </div>
+        <div class="ml-[15%] mt-10">
+            <p class="text-[18px]">Dear Candidate,</p>
+            <p class="text-[18px] w-[50%] mt-5">
+                Your friend, Alex, thinks you'd be a great fit for our programs at
+                Westford University. We're excited to help you start your educational
+                journey with us!
+            </p>
+            <p class="text-[18px] mt-5">
+                Please fill out and submit your details below to get started.
+            </p>
+            <div class="grid gap-[150px] mb-6 md:grid-cols-2 mt-10 w-[60%]">
+                <div>
+                    <label for="name" class="block mb-2 dark:text-white text-[18px] font-semibold">Name <span
+                            class="text-red-700">*</span></label>
+                    <input type="text" id="name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Enter your Full Name" />
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-gray-900 dark:text-white text-[18px] font-semibold">Email
+                        <span class="text-red-700">*</span></label>
+                    <input type="email" id="email"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Enter your Email Address" />
+                </div>
+            </div>
+
+            <div class="grid gap-[150px] mb-6 md:grid-cols-2 mt-10 w-[60%]">
+                <div class="">
+                    <label for="name" class="block mb-2 dark:text-white text-[18px] font-semibold">Gender <span
+                            class="text-red-700">*</span></label>
+                    <div class="flex gap-4 mt-4">
+                        <div class="flex items-center flex-row">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                            <label for="default-radio-1"
+                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Male</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="default-radio-2" type="radio" value="" name="default-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                            <label for="default-radio-2"
+                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Female</label>
+                        </div>
+
+                        <div class="flex items-center">
+                            <input id="default-radio-3" type="radio" value="" name="default-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                            <label for="default-radio-3"
+                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Other</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="phone" class="block mb-2 text-gray-900 dark:text-white text-[18px] font-semibold">Phone
+                        <span class="text-red-700">*</span></label>
+                    <div class="relative">
+                        <input id="phone" autocomplete="off" type="text"
+                            class="border pl-[90px] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" />
+
+                        <button class="absolute bottom-1 left-2 py-1 px-3 rounded" (click)="toggleModal3()">
+                            {{ selectedCountryPhone?.flag }} {{ selectedCountryPhone.code }}
+                        </button>
+
+                        <!-- Modal -->
+                        @if (isModalOpen3) {
+                        <div class="absolute bg-white shadow-lg border rounded mt-2 p-4 w-full z-10 max-h-[300px] overflow-auto"
+                            style="top: 95%; left: 0" (click)="insideClick = true">
+                            @for (item of countriesWithFlag; track $index) {
+                            <p class="p-2 border-b cursor-pointer" (click)="selectCoutryPhone(item)">
+                                {{ item.flag }} &nbsp;
+                                {{ item.name }}
+                                &nbsp; {{ item.code }}
+                            </p>
+                            }
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid gap-[150px] mb-6 md:grid-cols-2 mt-10 w-[60%]">
+                <div>
+                    <label for="name" class="block mb-2 dark:text-white text-[18px] font-semibold">Country <span
+                            class="text-red-700">*</span></label>
+                    <select id="countries"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>Choose a country</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="school"
+                        class="block mb-2 text-gray-900 dark:text-white text-[18px] font-semibold">Current
+                        School/Institution
+                    </label>
+                    <input type="text" id="school"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Enter your Current School/Institution" />
+                </div>
+            </div>
+
+            <div class="grid gap-[150px] mb-6 md:grid-cols-2 mt-10 w-[60%]">
+                <div>
+                    <label for="name" class="block mb-2 dark:text-white text-[18px] font-semibold">Category <span
+                            class="text-red-700">*</span></label>
+                    <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>Please select a category</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="name" class="block mb-2 dark:text-white text-[18px] font-semibold">Course<span
+                            class="text-red-700">*</span></label>
+                    <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>Please choose a course</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid gap-[150px] mb-6 md:grid-cols-2 mt-10 w-[60%]">
+                <div>
+                    <label for="date"
+                        class="block mb-2 text-gray-900 dark:text-white text-[18px] font-semibold">Preferred Start Date
+                    </label>
+                    <input type="text" id="date"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Enter your Preferred Start Date" />
+                </div>
+            </div>
+
+            <div class="flex items-center mb-4">
+                <input id="default-checkbox" type="checkbox" value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                <label for="default-checkbox" class="ms-2 text-sm font-medium text-[#000000] dark:text-gray-300">I agree
+                    to subscribe to the Westford Newsletter</label>
+            </div>
+
+            <div class="flex items-center font-poppins">
+                <input id="checked-checkbox1" type="checkbox" value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                <label for="checked-checkbox1" class="ms-2 text-sm font-medium text-[#000000] dark:text-gray-300">I
+                    agree to receive promotional emails from Westford Uni Online</label>
+            </div>
+
+            <div class="mb-10 mt-10">
+                <button type="button" class="flex w-[400px] gap-2 h-[44px] rounded-full justify-center bg-[#DE4A2C] text-white items-center">
+                    Submit
+                    <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.2638 8.49844L1.77781 15.8099C1.63622 15.9319 1.4481 16 1.25248 16C1.05686 16 0.868743 15.9319 0.72715 15.8099L0.718013 15.8016C0.649133 15.7424 0.594286 15.6712 0.556807 15.5923C0.519327 15.5133 0.5 15.4283 0.5 15.3424C0.5 15.2565 0.519327 15.1715 0.556807 15.0925C0.594286 15.0136 0.649133 14.9424 0.718013 14.8832L8.70915 7.99862L0.718013 1.11681C0.649133 1.05764 0.594286 0.986415 0.556807 0.907473C0.519327 0.82853 0.5 0.743518 0.5 0.657608C0.5 0.571698 0.519327 0.486687 0.556807 0.407743C0.594286 0.328801 0.649133 0.257578 0.718013 0.198408L0.72715 0.190145C0.868743 0.0680895 1.05686 0 1.25248 0C1.4481 0 1.63622 0.0680895 1.77781 0.190145L10.2638 7.50156C10.3385 7.56586 10.3979 7.64319 10.4385 7.72887C10.4791 7.81455 10.5 7.90679 10.5 8C10.5 8.09321 10.4791 8.18545 10.4385 8.27113C10.3979 8.35681 10.3385 8.43415 10.2638 8.49844Z" fill="white"/>
+                        </svg>
+                        
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
