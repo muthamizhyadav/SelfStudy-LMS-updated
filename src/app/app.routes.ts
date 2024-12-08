@@ -71,6 +71,10 @@ export const routes: Routes = [
     component: QuizViewAndSubmissionComponent,
   },
   {
+    path: 'quiz-result',
+    component: ViewQuizResultComponent,
+  },
+  {
     path:'webinars',
     component:ViewWebinarComponent
   },
