@@ -13,7 +13,7 @@ export class AccordianComponent {
   @Input() title1: string = '';
   @Input() title: string = '';
   @Input() getClass: string = '';
-
+  @Input() bgor:boolean=false;
   isOpen = false;
 
   toggleAccordion() {

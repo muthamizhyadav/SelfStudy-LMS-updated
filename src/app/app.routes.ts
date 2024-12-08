@@ -21,6 +21,7 @@ import { FeedbackSubmitFormComponent } from './features/feedback/feedback-submit
 import { ProfileViewComponent } from './features/profile/profile-view/profile-view.component';
 import { ChangePasswordComponent } from './features/profile/change-password/change-password.component';
 import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
+import { PurchaseComboModuleListComponent } from './features/course/course-payment/purchase-combo-module-list/purchase-combo-module-list.component';
 
 export const routes: Routes = [
   { path: '', component: LoginComponent, pathMatch: 'full' },
@@ -41,10 +42,10 @@ export const routes: Routes = [
         path: 'payment',
         component: CourseEnrollmentComponent,
       },
-      //   {
-      //     path: 'combo',
-      //     component: CourseComboComponent,
-      //   },
+        {
+          path: 'combo',
+          component: PurchaseComboModuleListComponent,
+        },
       {
         path: 'quiz',
         component: ViewQuizResultComponent,

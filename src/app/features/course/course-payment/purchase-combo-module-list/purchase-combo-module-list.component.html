@@ -1,1 +1,358 @@
-<p>purchase-combo-module-list works!</p>
+<app-header></app-header>
+<div class="px-[10px]">
+  <div class="flex w-full mt-[110px] gap-[15px]">
+    <div class="min-w-[240px]">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="min-w-[calc(100% - 280px)] overflow-y-auto w-full mt-[8px] ">
+      <section class="w-full flex gap-[10px] justify-between">
+        <div
+          class=" max-w-[900px]   h-full py-[20px] box-content pb-[20px] bg-white rounded-lg"
+        >
+          <h2
+            class="font-semibold flex items-center bg-black my-[5px] h-[40px] p-[8px] w-full text-white text-[16px]"
+          >
+            <svg
+              width="31"
+              height="31"
+              viewBox="0 0 31 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 18.5659H6.20621V30.9845H0V18.5659ZM10.8609 12.4186H17.0671V30.9845H10.8609V12.4186Z"
+                fill="white"
+              />
+              <path
+                d="M24.7941 0L31.0003 6.19381H27.8972V31H21.691V6.19381H18.5879L24.7941 0Z"
+                fill="#DE4A2C"
+              />
+            </svg>
+
+            Enhance <span class="font-light">Your Learning Experience:</span>
+          </h2>
+          <div
+            class="flex items-center min-h-[60px] h-auto gap-[4px] w-full px-[10px] relative"
+          >
+            <span
+              class="block h-[calc(100%-30px)] rounded-sm w-[4px] bg-[var(--ma)]"
+            ></span>
+            <p class="text-wrap text-[13px] font-semibold capitalize">
+              Diploma <span class="font-light">in Business Management</span>
+            </p>
+            <div
+              class="absolute flex items-center w-full h-full justify-center"
+            >
+              <div class="flex items-center w-[80px] justify-center">
+                <p>
+                  P<span>lus <sup>+</sup></span>
+                </p>
+                <svg
+                  width="16"
+                  height="18"
+                  viewBox="0 0 16 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 16V2M8 16L14 10M8 16L2 10"
+                    stroke="#DE4A2C"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full p-4 relative flex items-center  flex-col justify-between h-[410px] pb-[10px] pt-[20px] bg-[var(--db)] rounded-lg"
+          >
+            <div
+              class="flex flex-nowrap whitespace-nowrap w-full h-[400px] flex-row overflow-x-scroll gap-[20px] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
+            >
+              <div
+                class="bg-white pb-[20px] inline-flex flex-col mr-[20px] rounded-[20px] justify-evenly min-w-[300px] pt-[10px] h-[360px]"
+              >
+                <div class="flex items-center h-[70px] gap-[4px] pl-[20px]">
+                  <span
+                    class="block h-[calc(100%-30px)] rounded-sm w-[4px] bg-[var(--ma)]"
+                  ></span>
+                  <div>
+                    <p class="text-wrap text-[14px] font-semibold capitalize">
+                      Marketing Essentials
+                    </p>
+                    <p class="text-gray-400 text-[12px]">-Module</p>
+                  </div>
+                </div>
+                <div>
+                  <ol
+                    class="pl-[20px] h-full flex flex-col justify-around gap-[10px]"
+                  >
+                    <li class="text-[13px]">
+                      <span class="red-ball"></span>Overview: <br />
+                      <p class="whitespace-break-spaces">
+                        Gain insights into essential marketing strategies and
+                        techniques, including market analysis, consumer
+                        behavior, and effective campaign management.
+                      </p>
+                    </li>
+                    <li class="text-[13px]">
+                      <span class="red-ball"></span>Price:
+                      <span class="text-white px-[2.5px] bg-[var(--or)]"
+                        >200 USD</span
+                      >
+                      <br />
+                      <span class="font-semibold"
+                        >(Save 15% when purchased together)</span
+                      >
+                    </li>
+                  </ol>
+                </div>
+                <div class="w-full items-center grid grid-cols-2 grade">
+                  <div>
+                    <p class="underline">More Details</p>
+                  </div>
+                  <div class="flex flex-col mleft">
+                    <div class="cl">
+                      <p>Purchase Combo</p>
+                      <svg
+                        width="10"
+                        height="16"
+                        viewBox="0 0 10 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.76383 8.49844L1.27781 15.8099C1.13622 15.9319 0.948103 16 0.752481 16C0.556858 16 0.368743 15.9319 0.22715 15.8099L0.218013 15.8016C0.149133 15.7424 0.094286 15.6712 0.0568066 15.5923C0.0193272 15.5133 0 15.4283 0 15.3424C0 15.2565 0.0193272 15.1715 0.0568066 15.0925C0.094286 15.0136 0.149133 14.9424 0.218013 14.8832L8.20915 7.99862L0.218013 1.11681C0.149133 1.05764 0.094286 0.986415 0.0568066 0.907473C0.0193272 0.82853 0 0.743518 0 0.657608C0 0.571698 0.0193272 0.486687 0.0568066 0.407743C0.094286 0.328801 0.149133 0.257578 0.218013 0.198408L0.22715 0.190145C0.368743 0.0680895 0.556858 0 0.752481 0C0.948103 0 1.13622 0.0680895 1.27781 0.190145L9.76383 7.50156C9.83846 7.56586 9.89787 7.64319 9.93847 7.72887C9.97907 7.81455 10 7.90679 10 8C10 8.09321 9.97907 8.18545 9.93847 8.27113C9.89787 8.35681 9.83846 8.43415 9.76383 8.49844Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white pb-[20px] inline-flex flex-col mr-[20px] rounded-[20px] justify-evenly min-w-[300px] pt-[10px] h-[360px]"
+              >
+                <div class="flex items-center h-[70px] gap-[4px] pl-[20px]">
+                  <span
+                    class="block h-[calc(100%-30px)] rounded-sm w-[4px] bg-[var(--ma)]"
+                  ></span>
+                  <div>
+                    <p class="text-wrap text-[14px] font-semibold capitalize">
+                      Marketing Essentials
+                    </p>
+                    <p class="text-gray-400 text-[12px]">-Module</p>
+                  </div>
+                </div>
+                <div>
+                  <ol
+                    class="pl-[20px] h-full flex flex-col justify-around gap-[10px]"
+                  >
+                    <li class="text-[13px]">
+                      <span class="red-ball"></span>Overview: <br />
+                      <p class="whitespace-break-spaces">
+                        Gain insights into essential marketing strategies and
+                        techniques, including market analysis, consumer
+                        behavior, and effective campaign management.
+                      </p>
+                    </li>
+                    <li class="text-[13px]">
+                      <span class="red-ball"></span>Price:
+                      <span class="text-white px-[2.5px] bg-[var(--or)]"
+                        >200 USD</span
+                      >
+                      <br />
+                      <span class="font-semibold"
+                        >(Save 15% when purchased together)</span
+                      >
+                    </li>
+                  </ol>
+                </div>
+                <div class="w-full items-center grid grid-cols-2 grade">
+                  <div>
+                    <p class="underline">More Details</p>
+                  </div>
+                  <div class="flex flex-col mleft">
+                    <div class="cl">
+                      <p>Purchase Combo</p>
+                      <svg
+                        width="10"
+                        height="16"
+                        viewBox="0 0 10 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.76383 8.49844L1.27781 15.8099C1.13622 15.9319 0.948103 16 0.752481 16C0.556858 16 0.368743 15.9319 0.22715 15.8099L0.218013 15.8016C0.149133 15.7424 0.094286 15.6712 0.0568066 15.5923C0.0193272 15.5133 0 15.4283 0 15.3424C0 15.2565 0.0193272 15.1715 0.0568066 15.0925C0.094286 15.0136 0.149133 14.9424 0.218013 14.8832L8.20915 7.99862L0.218013 1.11681C0.149133 1.05764 0.094286 0.986415 0.0568066 0.907473C0.0193272 0.82853 0 0.743518 0 0.657608C0 0.571698 0.0193272 0.486687 0.0568066 0.407743C0.094286 0.328801 0.149133 0.257578 0.218013 0.198408L0.22715 0.190145C0.368743 0.0680895 0.556858 0 0.752481 0C0.948103 0 1.13622 0.0680895 1.27781 0.190145L9.76383 7.50156C9.83846 7.56586 9.89787 7.64319 9.93847 7.72887C9.97907 7.81455 10 7.90679 10 8C10 8.09321 9.97907 8.18545 9.93847 8.27113C9.89787 8.35681 9.83846 8.43415 9.76383 8.49844Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white pb-[20px] inline-flex flex-col mr-[20px] rounded-[20px] justify-evenly min-w-[300px] pt-[10px] h-[360px]"
+              >
+                <div class="flex items-center h-[70px] gap-[4px] pl-[20px]">
+                  <span
+                    class="block h-[calc(100%-30px)] rounded-sm w-[4px] bg-[var(--ma)]"
+                  ></span>
+                  <div>
+                    <p class="text-wrap text-[14px] font-semibold capitalize">
+                      Marketing Essentials
+                    </p>
+                    <p class="text-gray-400 text-[12px]">-Module</p>
+                  </div>
+                </div>
+                <div>
+                  <ol
+                    class="pl-[20px] h-full flex flex-col justify-around gap-[10px]"
+                  >
+                    <li class="text-[13px]">
+                      <span class="red-ball"></span>Overview: <br />
+                      <p class="whitespace-break-spaces">
+                        Gain insights into essential marketing strategies and
+                        techniques, including market analysis, consumer
+                        behavior, and effective campaign management.
+                      </p>
+                    </li>
+                    <li class="text-[13px]">
+                      <span class="red-ball"></span>Price:
+                      <span class="text-white px-[2.5px] bg-[var(--or)]"
+                        >200 USD</span
+                      >
+                      <br />
+                      <span class="font-semibold"
+                        >(Save 15% when purchased together)</span
+                      >
+                    </li>
+                  </ol>
+                </div>
+                <div class="w-full items-center grid grid-cols-2 grade">
+                  <div>
+                    <p class="underline">More Details</p>
+                  </div>
+                  <div class="flex flex-col mleft">
+                    <div class="cl">
+                      <p>Purchase Combo</p>
+                      <svg
+                        width="10"
+                        height="16"
+                        viewBox="0 0 10 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.76383 8.49844L1.27781 15.8099C1.13622 15.9319 0.948103 16 0.752481 16C0.556858 16 0.368743 15.9319 0.22715 15.8099L0.218013 15.8016C0.149133 15.7424 0.094286 15.6712 0.0568066 15.5923C0.0193272 15.5133 0 15.4283 0 15.3424C0 15.2565 0.0193272 15.1715 0.0568066 15.0925C0.094286 15.0136 0.149133 14.9424 0.218013 14.8832L8.20915 7.99862L0.218013 1.11681C0.149133 1.05764 0.094286 0.986415 0.0568066 0.907473C0.0193272 0.82853 0 0.743518 0 0.657608C0 0.571698 0.0193272 0.486687 0.0568066 0.407743C0.094286 0.328801 0.149133 0.257578 0.218013 0.198408L0.22715 0.190145C0.368743 0.0680895 0.556858 0 0.752481 0C0.948103 0 1.13622 0.0680895 1.27781 0.190145L9.76383 7.50156C9.83846 7.56586 9.89787 7.64319 9.93847 7.72887C9.97907 7.81455 10 7.90679 10 8C10 8.09321 9.97907 8.18545 9.93847 8.27113C9.89787 8.35681 9.83846 8.43415 9.76383 8.49844Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-white pb-[20px] inline-flex flex-col mr-[20px] rounded-[20px] justify-evenly min-w-[300px] pt-[10px] h-[360px]"
+              >
+                <div class="flex items-center h-[70px] gap-[4px] pl-[20px]">
+                  <span
+                    class="block h-[calc(100%-30px)] rounded-sm w-[4px] bg-[var(--ma)]"
+                  ></span>
+                  <div>
+                    <p class="text-wrap text-[14px] font-semibold capitalize">
+                      Marketing Essentials
+                    </p>
+                    <p class="text-gray-400 text-[12px]">-Module</p>
+                  </div>
+                </div>
+                <div>
+                  <ol
+                    class="pl-[20px] h-full flex flex-col justify-around gap-[10px]"
+                  >
+                    <li class="text-[13px]">
+                      <span class="red-ball"></span>Overview: <br />
+                      <p class="whitespace-break-spaces">
+                        Gain insights into essential marketing strategies and
+                        techniques, including market analysis, consumer
+                        behavior, and effective campaign management.
+                      </p>
+                    </li>
+                    <li class="text-[13px]">
+                      <span class="red-ball"></span>Price:
+                      <span class="text-white px-[2.5px] bg-[var(--or)]"
+                        >200 USD</span
+                      >
+                      <br />
+                      <span class="font-semibold"
+                        >(Save 15% when purchased together)</span
+                      >
+                    </li>
+                  </ol>
+                </div>
+                <div class="w-full items-center grid grid-cols-2 grade">
+                  <div>
+                    <p class="underline">More Details</p>
+                  </div>
+                  <div class="flex flex-col mleft">
+                    <div class="cl">
+                      <p>Purchase Combo</p>
+                      <svg
+                        width="10"
+                        height="16"
+                        viewBox="0 0 10 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.76383 8.49844L1.27781 15.8099C1.13622 15.9319 0.948103 16 0.752481 16C0.556858 16 0.368743 15.9319 0.22715 15.8099L0.218013 15.8016C0.149133 15.7424 0.094286 15.6712 0.0568066 15.5923C0.0193272 15.5133 0 15.4283 0 15.3424C0 15.2565 0.0193272 15.1715 0.0568066 15.0925C0.094286 15.0136 0.149133 14.9424 0.218013 14.8832L8.20915 7.99862L0.218013 1.11681C0.149133 1.05764 0.094286 0.986415 0.0568066 0.907473C0.0193272 0.82853 0 0.743518 0 0.657608C0 0.571698 0.0193272 0.486687 0.0568066 0.407743C0.094286 0.328801 0.149133 0.257578 0.218013 0.198408L0.22715 0.190145C0.368743 0.0680895 0.556858 0 0.752481 0C0.948103 0 1.13622 0.0680895 1.27781 0.190145L9.76383 7.50156C9.83846 7.56586 9.89787 7.64319 9.93847 7.72887C9.97907 7.81455 10 7.90679 10 8C10 8.09321 9.97907 8.18545 9.93847 8.27113C9.89787 8.35681 9.83846 8.43415 9.76383 8.49844Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-[200px] flex items-center justify-center">
+            <button
+              class="h-[40px] text-[14px] justify-center w-[320px] bg-[var(--db)] flex items-center gap-1 text-white rounded-[25px]"
+            >
+              No, Thanks. Proceed with Payment
+              <svg
+                width="26"
+                height="20"
+                viewBox="0 0 26 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.25 1H4.15C2.4103 1 1 2.4103 1 4.15V15.85C1 17.5897 2.4103 19 4.15 19H21.25C22.9897 19 24.4 17.5897 24.4 15.85V4.15C24.4 2.4103 22.9897 1 21.25 1Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1 6.40001H24.4M5.5 12.475H8.2V13.6H5.5V12.475Z"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="w-[30%]  rounded-lg ">
+          <app-notes-and-observations></app-notes-and-observations>
+
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
