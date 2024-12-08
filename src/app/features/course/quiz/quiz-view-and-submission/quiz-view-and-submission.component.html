@@ -1,280 +1,183 @@
 <div class="w-full h-[100vh] bg-slate-100 flex items-center justify-center">
-    @if (show == 'start') {
-    <div class="w-[800px] h-[500px] rounded-3xl bg-white">
-      <div class="bg-[var(--db)] h-[100px] rounded-t-3xl flex w-full">
-        <div class="flex justify-between items-center px-3 w-full mt-8">
-          <div>
-            <h2 class="text-white font-semibold text-xl">
-              Multiple <span class="font-light">Choice Quiz</span>
-            </h2>
-          </div>
-          <div class="flex items-center justify-center">
-            <svg
-              width="14"
-              height="16"
-              viewBox="0 0 14 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 14.4762C5.55604 14.4762 4.17123 13.9143 3.1502 12.9141C2.12916 11.9139 1.55556 10.5573 1.55556 9.14286C1.55556 7.72837 2.12916 6.37182 3.1502 5.37162C4.17123 4.37143 5.55604 3.80952 7 3.80952C8.44396 3.80952 9.82877 4.37143 10.8498 5.37162C11.8708 6.37182 12.4444 7.72837 12.4444 9.14286C12.4444 10.5573 11.8708 11.9139 10.8498 12.9141C9.82877 13.9143 8.44396 14.4762 7 14.4762ZM12.4678 4.86857L13.5722 3.78667C13.2222 3.3981 12.8722 3.04762 12.4756 2.71238L11.3711 3.80952C10.1656 2.84952 8.64889 2.28571 7 2.28571C5.14348 2.28571 3.36301 3.00816 2.05025 4.29413C0.737498 5.58009 0 7.32423 0 9.14286C0 10.9615 0.737498 12.7056 2.05025 13.9916C3.36301 15.2776 5.14348 16 7 16C10.8889 16 14 12.9295 14 9.14286C14 7.52762 13.4244 6.0419 12.4678 4.86857ZM6.22222 9.90476H7.77778V5.33333H6.22222M9.33333 0H4.66667V1.52381H9.33333V0Z"
-                fill="white"
-              />
-            </svg>
-            <p class="text-white text-[14px] ml-2">15m 00s</p>
-          </div>
+  @if (show == 'start') {
+  <div class="w-[800px] h-[500px] rounded-3xl bg-white">
+    <div class="bg-[var(--db)] h-[100px] rounded-t-3xl flex w-full">
+      <div class="flex justify-between items-center px-3 w-full mt-8">
+        <div>
+          <h2 class="text-white font-semibold text-xl">
+            Multiple <span class="font-light">Choice Quiz</span>
+          </h2>
         </div>
-      </div>
-      <div class="w-full h-[calc(100%-200px)]">
-        <div
-          class="flex justify-between items-center px-3 w-full h-[60px] mt-[15px]"
-        >
-          <div class="flex items-center gap-[10px]">
-            <span
-              class="inline-block h-[18px] w-[4px] rounded-md bg-[var(--or)]"
-            ></span>
-            <p class="font-light text-[18px]">Instructions</p>
-          </div>
-          <div class="flex items-center gap-1">
-            <a class="underline-offset-1 underline text-[14px]">Download Notes</a>
-            <svg
-              width="17"
-              height="21"
-              viewBox="0 0 17 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_4169_4999)">
-                <path
-                  d="M1.57781 0H9.40903C9.68104 0 9.91516 0.0998389 10.1076 0.297456L14.2617 4.56813C14.4541 4.76588 14.551 5.00683 14.551 5.28641V11.7757C14.1351 11.6157 13.6932 11.5105 13.2338 11.4681V5.49493H10.5946C9.82975 5.49493 9.20614 4.85369 9.20614 4.06747V1.35421H1.57781C1.43498 1.35421 1.31724 1.47525 1.31724 1.62215V18.2003C1.31724 18.3506 1.43149 18.4681 1.57781 18.4681H8.02112C8.19796 18.9586 8.44469 19.4141 8.74864 19.8223H1.57781C0.711607 19.8223 0 19.0908 0 18.2003V1.62215C0 0.727986 0.70805 0 1.57781 0Z"
-                  fill="black"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.55038 16.6578C8.55038 19.0561 10.4419 21.0002 12.7752 21.0002C15.1085 21.0002 17.0001 19.0561 17.0001 16.6578C17.0001 14.2596 15.1085 12.3154 12.7752 12.3154C10.4419 12.3154 8.55038 14.2596 8.55038 16.6578ZM10.614 16.9997L12.6198 19.7269C12.6579 19.7786 12.7121 19.8064 12.7752 19.8064C12.8383 19.8064 12.8926 19.7786 12.9306 19.7269L14.9364 16.9997C14.9822 16.9376 14.9893 16.8595 14.9555 16.7898C14.9217 16.7201 14.8568 16.6788 14.781 16.6788H14.0442C13.9369 16.6788 13.8494 16.5888 13.8494 16.4785V13.7097C13.8494 13.5994 13.7619 13.5094 13.6546 13.5094H11.896C11.7886 13.5094 11.7012 13.5994 11.7012 13.7097V16.4785C11.7012 16.5889 11.6137 16.6788 11.5063 16.6788H10.7695C10.6937 16.6788 10.6288 16.7201 10.5951 16.7898C10.5613 16.8596 10.5684 16.9377 10.6141 16.9997H10.614Z"
-                  fill="#DE4A2C"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_4169_4999">
-                  <rect width="17" height="21" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-        </div>
-        <div class="px-[20px]">
-          <ul class="flex flex-col gap-[10px]">
-            <li class="flex items-center gap-1 text-[#535353] text-[14px]">
-              Answer each question by selecting the appropriate option.
-            </li>
-            <li class="flex items-center gap-1 text-[#535353] text-[14px]">
-              <span
-                class="inline-block w-[8px] h-[8px] bg-[var(--ma)] rounded-full"
-              ></span>
-              Use the Next button to navigate to the next question.
-            </li>
-            <li class="flex items-center gap-1 text-[#535353] text-[14px]">
-              <span
-                class="inline-block mb-[21px] min-w-[8px] h-[8px] bg-[var(--ma)] rounded-full"
-              ></span>
-              You can proceed to the next question without answering the current
-              question, but make sure to come back and complete it before
-              submission.
-            </li>
-            <li class="flex items-center gap-1 text-[#535353] text-[14px]">
-              <span
-                class="inline-block w-[8px] h-[8px] bg-[var(--ma)] rounded-full"
-              ></span>
-              You have 15 minutes to complete the quiz. You’ll see the timer at
-              the top right of the window.
-            </li>
-            <li class="flex items-center gap-1 text-[#535353] text-[14px]">
-              <span
-                class="inline-block w-[8px] h-[8px] bg-[var(--ma)] rounded-full"
-              ></span>
-              Use the Review Answers button to review and modify your answers
-              before submission.
-            </li>
-            <li class="flex items-center gap-1 text-[#535353] text-[14px]">
-              <span
-                class="inline-block w-[8px] h-[8px] bg-[var(--ma)] rounded-full"
-              ></span>
-              Click Submit after answering all questions to submit your responses.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="bg-black h-[100px] rounded-b-3xl flex items-center justify-center"
-      >
-        <button
-          (click)="changeShow('quiz')"
-          class="bg-[var(--or)] h-[50px] px-[10px] gap-2 text-white w-[140px] text-[14px] justify-center flex items-center rounded-full"
-        >
-          Start Quiz
-          <svg
-            width="10"
-            height="16"
-            viewBox="0 0 10 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <div class="flex items-center justify-center">
+          <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M9.76383 8.49844L1.27781 15.8099C1.13622 15.9319 0.948103 16 0.752481 16C0.556858 16 0.368743 15.9319 0.22715 15.8099L0.218013 15.8016C0.149133 15.7424 0.094286 15.6712 0.0568066 15.5923C0.0193272 15.5133 0 15.4283 0 15.3424C0 15.2565 0.0193272 15.1715 0.0568066 15.0925C0.094286 15.0136 0.149133 14.9424 0.218013 14.8832L8.20915 7.99862L0.218013 1.11681C0.149133 1.05764 0.094286 0.986415 0.0568066 0.907473C0.0193272 0.82853 0 0.743518 0 0.657608C0 0.571698 0.0193272 0.486687 0.0568066 0.407743C0.094286 0.328801 0.149133 0.257578 0.218013 0.198408L0.22715 0.190145C0.368743 0.0680895 0.556858 0 0.752481 0C0.948103 0 1.13622 0.0680895 1.27781 0.190145L9.76383 7.50156C9.83846 7.56586 9.89787 7.64319 9.93847 7.72887C9.97907 7.81455 10 7.90679 10 8C10 8.09321 9.97907 8.18545 9.93847 8.27113C9.89787 8.35681 9.83846 8.43415 9.76383 8.49844Z"
-              fill="white"
-            />
+              d="M7 14.4762C5.55604 14.4762 4.17123 13.9143 3.1502 12.9141C2.12916 11.9139 1.55556 10.5573 1.55556 9.14286C1.55556 7.72837 2.12916 6.37182 3.1502 5.37162C4.17123 4.37143 5.55604 3.80952 7 3.80952C8.44396 3.80952 9.82877 4.37143 10.8498 5.37162C11.8708 6.37182 12.4444 7.72837 12.4444 9.14286C12.4444 10.5573 11.8708 11.9139 10.8498 12.9141C9.82877 13.9143 8.44396 14.4762 7 14.4762ZM12.4678 4.86857L13.5722 3.78667C13.2222 3.3981 12.8722 3.04762 12.4756 2.71238L11.3711 3.80952C10.1656 2.84952 8.64889 2.28571 7 2.28571C5.14348 2.28571 3.36301 3.00816 2.05025 4.29413C0.737498 5.58009 0 7.32423 0 9.14286C0 10.9615 0.737498 12.7056 2.05025 13.9916C3.36301 15.2776 5.14348 16 7 16C10.8889 16 14 12.9295 14 9.14286C14 7.52762 13.4244 6.0419 12.4678 4.86857ZM6.22222 9.90476H7.77778V5.33333H6.22222M9.33333 0H4.66667V1.52381H9.33333V0Z"
+              fill="white" />
           </svg>
-        </button>
+          <p class="text-white text-[14px] ml-2">15m 00s</p>
+        </div>
       </div>
     </div>
-    } @if(show=='quiz'){
-    <div class="w-[800px] h-[500px] rounded-3xl bg-white">
-      <div class="bg-[var(--db)] h-[100px] rounded-t-3xl flex w-full">
-        <div class="flex justify-between items-center px-3 w-full mt-8">
-          <div>
-            <h2 class="text-white font-semibold text-xl">
-              Multiple <span class="font-light">Choice Quiz</span>
-            </h2>
-          </div>
-          <div class="flex items-center justify-center">
-            <svg
-              width="14"
-              height="16"
-              viewBox="0 0 14 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+    <div class="w-full h-[calc(100%-200px)]">
+      <div class="flex justify-between items-center px-3 w-full h-[60px] mt-[15px]">
+        <div class="flex items-center gap-[10px]">
+          <span class="inline-block h-[18px] w-[4px] rounded-md bg-[var(--or)]"></span>
+          <p class="font-light text-[18px]">Instructions</p>
+        </div>
+        <div class="flex items-center gap-1">
+          <a class="underline-offset-1 underline text-[14px]">Download Notes</a>
+          <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_4169_4999)">
               <path
-                d="M7 14.4762C5.55604 14.4762 4.17123 13.9143 3.1502 12.9141C2.12916 11.9139 1.55556 10.5573 1.55556 9.14286C1.55556 7.72837 2.12916 6.37182 3.1502 5.37162C4.17123 4.37143 5.55604 3.80952 7 3.80952C8.44396 3.80952 9.82877 4.37143 10.8498 5.37162C11.8708 6.37182 12.4444 7.72837 12.4444 9.14286C12.4444 10.5573 11.8708 11.9139 10.8498 12.9141C9.82877 13.9143 8.44396 14.4762 7 14.4762ZM12.4678 4.86857L13.5722 3.78667C13.2222 3.3981 12.8722 3.04762 12.4756 2.71238L11.3711 3.80952C10.1656 2.84952 8.64889 2.28571 7 2.28571C5.14348 2.28571 3.36301 3.00816 2.05025 4.29413C0.737498 5.58009 0 7.32423 0 9.14286C0 10.9615 0.737498 12.7056 2.05025 13.9916C3.36301 15.2776 5.14348 16 7 16C10.8889 16 14 12.9295 14 9.14286C14 7.52762 13.4244 6.0419 12.4678 4.86857ZM6.22222 9.90476H7.77778V5.33333H6.22222M9.33333 0H4.66667V1.52381H9.33333V0Z"
-                fill="white"
-              />
-            </svg>
-            <p class="text-white text-[14px] ml-2">15m 00s</p>
-          </div>
+                d="M1.57781 0H9.40903C9.68104 0 9.91516 0.0998389 10.1076 0.297456L14.2617 4.56813C14.4541 4.76588 14.551 5.00683 14.551 5.28641V11.7757C14.1351 11.6157 13.6932 11.5105 13.2338 11.4681V5.49493H10.5946C9.82975 5.49493 9.20614 4.85369 9.20614 4.06747V1.35421H1.57781C1.43498 1.35421 1.31724 1.47525 1.31724 1.62215V18.2003C1.31724 18.3506 1.43149 18.4681 1.57781 18.4681H8.02112C8.19796 18.9586 8.44469 19.4141 8.74864 19.8223H1.57781C0.711607 19.8223 0 19.0908 0 18.2003V1.62215C0 0.727986 0.70805 0 1.57781 0Z"
+                fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.55038 16.6578C8.55038 19.0561 10.4419 21.0002 12.7752 21.0002C15.1085 21.0002 17.0001 19.0561 17.0001 16.6578C17.0001 14.2596 15.1085 12.3154 12.7752 12.3154C10.4419 12.3154 8.55038 14.2596 8.55038 16.6578ZM10.614 16.9997L12.6198 19.7269C12.6579 19.7786 12.7121 19.8064 12.7752 19.8064C12.8383 19.8064 12.8926 19.7786 12.9306 19.7269L14.9364 16.9997C14.9822 16.9376 14.9893 16.8595 14.9555 16.7898C14.9217 16.7201 14.8568 16.6788 14.781 16.6788H14.0442C13.9369 16.6788 13.8494 16.5888 13.8494 16.4785V13.7097C13.8494 13.5994 13.7619 13.5094 13.6546 13.5094H11.896C11.7886 13.5094 11.7012 13.5994 11.7012 13.7097V16.4785C11.7012 16.5889 11.6137 16.6788 11.5063 16.6788H10.7695C10.6937 16.6788 10.6288 16.7201 10.5951 16.7898C10.5613 16.8596 10.5684 16.9377 10.6141 16.9997H10.614Z"
+                fill="#DE4A2C" />
+            </g>
+            <defs>
+              <clipPath id="clip0_4169_4999">
+                <rect width="17" height="21" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
         </div>
       </div>
-      <div class="w-full h-[calc(100%-200px)] relative">
-        <div class="absolute bottom-0 right-0 h-[50px]  w-[80px]">
-          <div class="relative size-12">
-            <svg
-              class="size-full -rotate-90"
-              viewBox="0 0 36 36"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="18"
-                cy="18"
-                r="16"
-                fill="none"
-                class="stroke-current text-gray-200 "
-                stroke-width="2"
-              ></circle>
-  
-              <circle
-                cx="18"
-                cy="18"
-                r="16"
-                fill="none"
-                class="stroke-current text-green-600 dark:text-green-500"
-                stroke-width="2"
-                stroke-dasharray="100"
-                stroke-dashoffset="65"
-                stroke-linecap="round"
-              ></circle>
-            </svg>
-  
-            <div
-              class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
-            >
-              <span
-                class="text-center text-[12px] font-bold text-green-600 dark:text-green-500"
-                >1/10</span
-              >
-            </div>
-          </div>
-        </div>
-        <div
-          class="flex justify-between items-center px-[25px] w-full h-[60px] mt-[15px]"
-        >
-          <div class="flex items-center gap-[10px]">
-            <p class="font-light text-[18px]">Question 01</p>
-          </div>
-        </div>
-        <div class="flex items-center px-[15px] gap-2">
-          <span
-            class="inline-block h-[18px] w-[4px] rounded-md bg-[var(--or)]"
-          ></span>
-          <p>What is the primary purpose of market segmentation?</p>
-        </div>
-        <div class="px-[30px] flex flex-wrap flex-col gap-2 items-baseline mt-2">
-          <p
-            class="items-center inline-flex gap-1 text-[#535353] text-[14px] rounded-full h-[30px] w-auto box-content px-[10px] border border-gray-400"
-          >
-            <span class="font-semibold">A.</span>To increase production efficiency
-          </p>
-          <p
-            class="items-center inline-flex gap-1 text-[#535353] text-[14px] rounded-full h-[30px] w-auto box-content px-[10px] border border-gray-400"
-          >
-            <span class="font-semibold">B.</span>To identify distinct groups of
-            consumers with common needs
-          </p>
-          <p
-            class="items-center inline-flex gap-1 text-[#535353] text-[14px] rounded-full h-[30px] w-auto box-content px-[10px] border border-gray-400"
-          >
-            <span class="font-semibold">C.</span>To maximize advertising budget
-          </p>
-          <p
-            class="items-center inline-flex gap-1 text-[#535353] text-[14px] rounded-full h-[30px] w-auto box-content px-[10px] border border-gray-400"
-          >
-            <span class="font-semibold">D.</span>To reduce competition in the
-            market
-          </p>
-        </div>
-      </div>
-      <div
-        class="bg-black h-[100px] rounded-b-3xl flex items-center justify-between px-3"
-      >
-        <button
-          (click)="changeShow('start')"
-          class="border-[var(--or)] border h-[40px] px-[10px] gap-2 text-white w-[140px] text-[14px] justify-center flex items-center rounded-full"
-        >
-          <svg
-            width="10"
-            height="16"
-            viewBox="0 0 10 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.236172 8.49844L8.72219 15.8099C8.86378 15.9319 9.0519 16 9.24752 16C9.44314 16 9.63126 15.9319 9.77285 15.8099L9.78199 15.8016C9.85087 15.7424 9.90571 15.6712 9.94319 15.5923C9.98067 15.5133 10 15.4283 10 15.3424C10 15.2565 9.98067 15.1715 9.94319 15.0925C9.90571 15.0136 9.85087 14.9424 9.78199 14.8832L1.79085 7.99862L9.78199 1.11681C9.85087 1.05764 9.90571 0.986415 9.94319 0.907473C9.98067 0.82853 10 0.743518 10 0.657608C10 0.571698 9.98067 0.486687 9.94319 0.407743C9.90571 0.328801 9.85087 0.257578 9.78199 0.198408L9.77285 0.190145C9.63126 0.0680895 9.44314 0 9.24752 0C9.0519 0 8.86378 0.0680895 8.72219 0.190145L0.236172 7.50156C0.16154 7.56586 0.102126 7.64319 0.0615295 7.72887C0.0209332 7.81455 0 7.90679 0 8C0 8.09321 0.0209332 8.18545 0.0615295 8.27113C0.102126 8.35681 0.16154 8.43415 0.236172 8.49844Z"
-              fill="white"
-            />
-          </svg>
-          Previous
-        </button>
-        <button
-          class="bg-[var(--or)] h-[40px] px-[10px] gap-2 text-white w-[140px] text-[14px] justify-center flex items-center rounded-full"
-        >
-          Next
-          <svg
-            width="10"
-            height="16"
-            viewBox="0 0 10 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9.76383 8.49844L1.27781 15.8099C1.13622 15.9319 0.948103 16 0.752481 16C0.556858 16 0.368743 15.9319 0.22715 15.8099L0.218013 15.8016C0.149133 15.7424 0.094286 15.6712 0.0568066 15.5923C0.0193272 15.5133 0 15.4283 0 15.3424C0 15.2565 0.0193272 15.1715 0.0568066 15.0925C0.094286 15.0136 0.149133 14.9424 0.218013 14.8832L8.20915 7.99862L0.218013 1.11681C0.149133 1.05764 0.094286 0.986415 0.0568066 0.907473C0.0193272 0.82853 0 0.743518 0 0.657608C0 0.571698 0.0193272 0.486687 0.0568066 0.407743C0.094286 0.328801 0.149133 0.257578 0.218013 0.198408L0.22715 0.190145C0.368743 0.0680895 0.556858 0 0.752481 0C0.948103 0 1.13622 0.0680895 1.27781 0.190145L9.76383 7.50156C9.83846 7.56586 9.89787 7.64319 9.93847 7.72887C9.97907 7.81455 10 7.90679 10 8C10 8.09321 9.97907 8.18545 9.93847 8.27113C9.89787 8.35681 9.83846 8.43415 9.76383 8.49844Z"
-              fill="white"
-            />
-          </svg>
-        </button>
+      <div class="px-[20px]">
+        <ul class="flex flex-col gap-[10px]">
+          <li class="flex items-center gap-1 text-[#535353] text-[14px]">
+            Answer each question by selecting the appropriate option.
+          </li>
+          <li class="flex items-center gap-1 text-[#535353] text-[14px]">
+            <span class="inline-block w-[8px] h-[8px] bg-[var(--ma)] rounded-full"></span>
+            Use the Next button to navigate to the next question.
+          </li>
+          <li class="flex items-center gap-1 text-[#535353] text-[14px]">
+            <span class="inline-block mb-[21px] min-w-[8px] h-[8px] bg-[var(--ma)] rounded-full"></span>
+            You can proceed to the next question without answering the current
+            question, but make sure to come back and complete it before
+            submission.
+          </li>
+          <li class="flex items-center gap-1 text-[#535353] text-[14px]">
+            <span class="inline-block w-[8px] h-[8px] bg-[var(--ma)] rounded-full"></span>
+            You have 15 minutes to complete the quiz. You’ll see the timer at
+            the top right of the window.
+          </li>
+          <li class="flex items-center gap-1 text-[#535353] text-[14px]">
+            <span class="inline-block w-[8px] h-[8px] bg-[var(--ma)] rounded-full"></span>
+            Use the Review Answers button to review and modify your answers
+            before submission.
+          </li>
+          <li class="flex items-center gap-1 text-[#535353] text-[14px]">
+            <span class="inline-block w-[8px] h-[8px] bg-[var(--ma)] rounded-full"></span>
+            Click Submit after answering all questions to submit your responses.
+          </li>
+        </ul>
       </div>
     </div>
-    }
-  
-  
-   
-  
+    <div class="bg-black h-[100px] rounded-b-3xl flex items-center justify-center">
+      <button (click)="changeShow('quiz')"
+        class="bg-[var(--or)] h-[50px] px-[10px] gap-2 text-white w-[140px] text-[14px] justify-center flex items-center rounded-full">
+        Start Quiz
+        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9.76383 8.49844L1.27781 15.8099C1.13622 15.9319 0.948103 16 0.752481 16C0.556858 16 0.368743 15.9319 0.22715 15.8099L0.218013 15.8016C0.149133 15.7424 0.094286 15.6712 0.0568066 15.5923C0.0193272 15.5133 0 15.4283 0 15.3424C0 15.2565 0.0193272 15.1715 0.0568066 15.0925C0.094286 15.0136 0.149133 14.9424 0.218013 14.8832L8.20915 7.99862L0.218013 1.11681C0.149133 1.05764 0.094286 0.986415 0.0568066 0.907473C0.0193272 0.82853 0 0.743518 0 0.657608C0 0.571698 0.0193272 0.486687 0.0568066 0.407743C0.094286 0.328801 0.149133 0.257578 0.218013 0.198408L0.22715 0.190145C0.368743 0.0680895 0.556858 0 0.752481 0C0.948103 0 1.13622 0.0680895 1.27781 0.190145L9.76383 7.50156C9.83846 7.56586 9.89787 7.64319 9.93847 7.72887C9.97907 7.81455 10 7.90679 10 8C10 8.09321 9.97907 8.18545 9.93847 8.27113C9.89787 8.35681 9.83846 8.43415 9.76383 8.49844Z"
+            fill="white" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  } @if(show=='quiz'){
+  <div class="w-[800px] h-[500px] rounded-3xl bg-white">
+    <div class="bg-[var(--db)] h-[100px] rounded-t-3xl flex w-full">
+      <div class="flex justify-between items-center px-3 w-full mt-8">
+        <div>
+          <h2 class="text-white font-semibold text-xl">
+            Multiple <span class="font-light">Choice Quiz</span>
+          </h2>
+        </div>
+        <div class="flex items-center justify-center">
+          <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 14.4762C5.55604 14.4762 4.17123 13.9143 3.1502 12.9141C2.12916 11.9139 1.55556 10.5573 1.55556 9.14286C1.55556 7.72837 2.12916 6.37182 3.1502 5.37162C4.17123 4.37143 5.55604 3.80952 7 3.80952C8.44396 3.80952 9.82877 4.37143 10.8498 5.37162C11.8708 6.37182 12.4444 7.72837 12.4444 9.14286C12.4444 10.5573 11.8708 11.9139 10.8498 12.9141C9.82877 13.9143 8.44396 14.4762 7 14.4762ZM12.4678 4.86857L13.5722 3.78667C13.2222 3.3981 12.8722 3.04762 12.4756 2.71238L11.3711 3.80952C10.1656 2.84952 8.64889 2.28571 7 2.28571C5.14348 2.28571 3.36301 3.00816 2.05025 4.29413C0.737498 5.58009 0 7.32423 0 9.14286C0 10.9615 0.737498 12.7056 2.05025 13.9916C3.36301 15.2776 5.14348 16 7 16C10.8889 16 14 12.9295 14 9.14286C14 7.52762 13.4244 6.0419 12.4678 4.86857ZM6.22222 9.90476H7.77778V5.33333H6.22222M9.33333 0H4.66667V1.52381H9.33333V0Z"
+              fill="white" />
+          </svg>
+          <p class="text-white text-[14px] ml-2">15m 00s</p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-[calc(100%-200px)] relative">
+      <div class="absolute bottom-0 right-0 h-[50px]  w-[80px]">
+        <div class="relative size-12">
+          <svg class="size-full -rotate-90" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 " stroke-width="2"></circle>
+
+            <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-green-600 dark:text-green-500"
+              stroke-width="2" stroke-dasharray="100" stroke-dashoffset="65" stroke-linecap="round"></circle>
+          </svg>
+
+          <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+            <span class="text-center text-[12px] font-bold text-green-600 dark:text-green-500">1/10</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between items-center px-[25px] w-full h-[60px] mt-[15px]">
+        <div class="flex items-center gap-[10px]">
+          <p class="font-light text-[18px]">Question 01</p>
+        </div>
+      </div>
+      <div class="flex items-center px-[15px] gap-2">
+        <span class="inline-block h-[18px] w-[4px] rounded-md bg-[var(--or)]"></span>
+        <p>What is the primary purpose of market segmentation?</p>
+      </div>
+      <div class="px-[30px] flex flex-wrap flex-col gap-2 items-baseline mt-2">
+        <p (click)="selectOption(1)" [ngClass]="{ 
+          'bg-[#1C2745] text-white': selected === 1, 
+        }" class="items-center inline-flex gap-1 text-[#535353] text-[14px] rounded-full h-[30px] w-auto box-content
+          px-[10px] border border-gray-400">
+          <span class="font-semibold">A.</span>To increase production efficiency
+        </p>
+        <p (click)="selectOption(2)" [ngClass]="{ 
+          'bg-[#1C2745] text-white': selected === 2, 
+        }"
+          class="items-center inline-flex gap-1 text-[#535353] text-[14px] rounded-full h-[30px] w-auto box-content px-[10px] border border-gray-400">
+          <span class="font-semibold">B.</span>To identify distinct groups of
+          consumers with common needs
+        </p>
+        <p (click)="selectOption(3)" [ngClass]="{ 
+          'bg-[#1C2745] text-white': selected === 3, 
+        }"
+          class="items-center inline-flex gap-1 text-[#535353] text-[14px] rounded-full h-[30px] w-auto box-content px-[10px] border border-gray-400">
+          <span class="font-semibold">C.</span>To maximize advertising budget
+        </p>
+        <p (click)="selectOption(4)" [ngClass]="{ 
+          'bg-[#1C2745] text-white': selected === 4, 
+        }"
+          class="items-center inline-flex gap-1 text-[#535353] text-[14px] rounded-full h-[30px] w-auto box-content px-[10px] border border-gray-400">
+          <span class="font-semibold">D.</span>To reduce competition in the
+          market
+        </p>
+      </div>
+    </div>
+    <div class="bg-black h-[100px] rounded-b-3xl flex items-center justify-between px-3">
+      <button (click)="changeShow('start')"
+        class="border-[var(--or)] border h-[40px] px-[10px] gap-2 text-white w-[140px] text-[14px] justify-center flex items-center rounded-full">
+        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.236172 8.49844L8.72219 15.8099C8.86378 15.9319 9.0519 16 9.24752 16C9.44314 16 9.63126 15.9319 9.77285 15.8099L9.78199 15.8016C9.85087 15.7424 9.90571 15.6712 9.94319 15.5923C9.98067 15.5133 10 15.4283 10 15.3424C10 15.2565 9.98067 15.1715 9.94319 15.0925C9.90571 15.0136 9.85087 14.9424 9.78199 14.8832L1.79085 7.99862L9.78199 1.11681C9.85087 1.05764 9.90571 0.986415 9.94319 0.907473C9.98067 0.82853 10 0.743518 10 0.657608C10 0.571698 9.98067 0.486687 9.94319 0.407743C9.90571 0.328801 9.85087 0.257578 9.78199 0.198408L9.77285 0.190145C9.63126 0.0680895 9.44314 0 9.24752 0C9.0519 0 8.86378 0.0680895 8.72219 0.190145L0.236172 7.50156C0.16154 7.56586 0.102126 7.64319 0.0615295 7.72887C0.0209332 7.81455 0 7.90679 0 8C0 8.09321 0.0209332 8.18545 0.0615295 8.27113C0.102126 8.35681 0.16154 8.43415 0.236172 8.49844Z"
+            fill="white" />
+        </svg>
+        Previous
+      </button>
+      <button
+        class="bg-[var(--or)] h-[40px] px-[10px] gap-2 text-white w-[140px] text-[14px] justify-center flex items-center rounded-full">
+        Next
+        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9.76383 8.49844L1.27781 15.8099C1.13622 15.9319 0.948103 16 0.752481 16C0.556858 16 0.368743 15.9319 0.22715 15.8099L0.218013 15.8016C0.149133 15.7424 0.094286 15.6712 0.0568066 15.5923C0.0193272 15.5133 0 15.4283 0 15.3424C0 15.2565 0.0193272 15.1715 0.0568066 15.0925C0.094286 15.0136 0.149133 14.9424 0.218013 14.8832L8.20915 7.99862L0.218013 1.11681C0.149133 1.05764 0.094286 0.986415 0.0568066 0.907473C0.0193272 0.82853 0 0.743518 0 0.657608C0 0.571698 0.0193272 0.486687 0.0568066 0.407743C0.094286 0.328801 0.149133 0.257578 0.218013 0.198408L0.22715 0.190145C0.368743 0.0680895 0.556858 0 0.752481 0C0.948103 0 1.13622 0.0680895 1.27781 0.190145L9.76383 7.50156C9.83846 7.56586 9.89787 7.64319 9.93847 7.72887C9.97907 7.81455 10 7.90679 10 8C10 8.09321 9.97907 8.18545 9.93847 8.27113C9.89787 8.35681 9.83846 8.43415 9.76383 8.49844Z"
+            fill="white" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  }
