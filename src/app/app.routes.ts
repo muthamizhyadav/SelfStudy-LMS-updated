@@ -21,10 +21,12 @@ import { FeedbackSubmitFormComponent } from './features/feedback/feedback-submit
 import { ProfileViewComponent } from './features/profile/profile-view/profile-view.component';
 import { ChangePasswordComponent } from './features/profile/change-password/change-password.component';
 import { ReferralScreenComponent } from './referral-screen/referral-screen.component';
+import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 
 export const routes: Routes = [
   { path: '', component: LoginComponent, pathMatch: 'full' },
   { path: 'signup', component: SignupComponent },
+  {path:'forget-pass',component:ForgotPasswordComponent},
   {
     path: 'courses',
     children: [
