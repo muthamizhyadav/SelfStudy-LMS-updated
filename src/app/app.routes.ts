@@ -20,6 +20,7 @@ import { UpcomingCertificatesComponent } from './features/certifications/upcomin
 import { FeedbackSubmitFormComponent } from './features/feedback/feedback-submit-form/feedback-submit-form.component';
 import { ProfileViewComponent } from './features/profile/profile-view/profile-view.component';
 import { ChangePasswordComponent } from './features/profile/change-password/change-password.component';
+import { ReferralScreenComponent } from './referral-screen/referral-screen.component';
 import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 import { PurchaseComboModuleListComponent } from './features/course/course-payment/purchase-combo-module-list/purchase-combo-module-list.component';
 
@@ -111,5 +112,9 @@ export const routes: Routes = [
   {
     path:'change-pass',
     component:ChangePasswordComponent
+  },
+  {
+    path:'referral',
+    component:ReferralScreenComponent
   }
 ];

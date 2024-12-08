@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
- 
+
   content: [
     "./src/**/*.{html,ts}",
-   
+
   ],
   daisyui: {
     themes: [], // No theme will be applied by default
@@ -15,6 +15,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif']
       },
     },
   },
